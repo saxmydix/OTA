@@ -48,13 +48,13 @@
                 title="Download"
                 description="Download latest Experimental builds">https://goo.gl/zoVCj5</RomUrl>
            <SagitFirmwareUrl
-	            id="SagitFirmware"
-	            title="Firmware"
-	            description="Download recommended Firmware">https://goo.gl/T9nC6Z</SagitFirmwareUrl>
+	        id="SagitFirmware"
+	        title="Firmware"
+	        description="Download recommended Firmware">https://goo.gl/T9nC6Z</SagitFirmwareUrl>
            <XdaUrl
-	            id="xda"
-	            title="Forum"
-	            description="Visit the Official HavocOS XDA-Thread for Mi 6">https://forum.xda-developers.com/mi-6/development/rom-havoc-os-t3807517</XdaUrl>
+	        id="xda"
+	        title="Forum"
+	        description="Visit the Official HavocOS XDA-Thread for Mi 6">https://forum.xda-developers.com/mi-6/development/rom-havoc-os-t3807517</XdaUrl>
             <ChangelogUrl
                 id="changelog"
                 title=""
