@@ -40,5 +40,25 @@
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </whyred>
+
+        <sagit>
+           <Filename>RR-O-v6.1.0-20180621-sagit-Experimental.zip</Filename>
+           <RomUrl
+            	id="rom"
+                title="Download"
+                description="Download latest Experimental builds">https://goo.gl/zoVCj5</RomUrl>
+           <SagitFirmwareUrl
+	            id="SagitFirmware"
+	            title="Firmware"
+	            description="Download recommended Firmware">https://goo.gl/T9nC6Z</SagitFirmwareUrl>
+           <XdaUrl
+	            id="xda"
+	            title="Forum"
+	            description="Visit the Official HavocOS XDA-Thread for Mi 6">https://forum.xda-developers.com/mi-6/development/rom-havoc-os-t3807517</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+        </sagit>
     </Stable>
 </SlimOTA>
