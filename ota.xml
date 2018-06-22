@@ -20,5 +20,25 @@
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </oneplus3>
+        
+        <whyred>
+            <Filename>Havoc-OS-20180622-whyred-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/whyred/Havoc-OS-20180622-whyred-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </whyred>
     </Stable>
 </SlimOTA>
