@@ -64,5 +64,29 @@
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </sagit>
+        
+        <vince>
+            <Filename>Havoc-OS-20180622-vince-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/vince/Havoc-OS-20180622-vince-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Redmi 5 Plus">https://forum.xda-developers.com/mi-6/development/rom-havoc-os-t3807517</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </vince>
     </Stable>
 </SlimOTA>
