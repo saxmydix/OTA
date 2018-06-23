@@ -112,6 +112,30 @@
                 title=""
                 description="">https://www.paypal.me/sahilashraff</PaypalUrl>
         </s2>
+
+	    <marlin>
+            <Filename>Havoc-OS-20180623-marlin-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/s2/Havoc-OS-20180623-s2-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for pixel xl marlin">https://forum.xda-developers.com/le-2/development/8-1-0-havoc-os-t3807772</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/samandjoe25</PaypalUrl>
+        </s2>
 	    
 	</Stable>
 </SlimOTA>
