@@ -126,7 +126,7 @@
             <XdaUrl
                 id="xda"
                 title="Forum"
-                description="Visit the Official HavocOS XDA-Thread for pixel xl marlin">https://forum.xda-developers.com/le-2/development/8-1-0-havoc-os-t3807772</XdaUrl>
+                description="Visit the Official HavocOS XDA-Thread for marlin">https://forum.xda-developers.com/pixel-xl/development/rom-havoc-os-t3808030</XdaUrl>
             <ChangelogUrl
                 id="changelog"
                 title=""
@@ -135,7 +135,7 @@
                 id="donation"
                 title=""
                 description="">https://www.paypal.me/samandjoe25</PaypalUrl>
-        </marlin>
+       </marlin>
 	    
 	</Stable>
 </SlimOTA>
