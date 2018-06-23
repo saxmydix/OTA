@@ -42,23 +42,23 @@
         </whyred>
 
         <sagit>
-           <Filename>Havoc-OS-20180622-sagit-Official</Filename>
+         <Filename>Havoc-OS-20180622-sagit-Official.zip</Filename>
            <RomUrl
-            	id="rom"
+                id="rom"
                 title="Download"
-                description="Download latest Experimental builds">https://goo.gl/zoVCj5</RomUrl>
+                description="Download latest Official builds">https://sourceforge.net/projects/havoc-os/files/sagit</RomUrl>
            <SagitFirmwareUrl
-            	id="SagitFirmware"
+	            id="SagitFirmware"
             	title="Firmware"
             	description="Download recommended Firmware">https://goo.gl/T9nC6Z</SagitFirmwareUrl>
-           <XdaUrl
-            	id="xda"
-            	title="Forum"
-            	description="Visit the Official HavocOS XDA-Thread for Mi 6">https://forum.xda-developers.com/mi-6/development/rom-havoc-os-t3807517</XdaUrl>
-            <ChangelogUrl
-                id="changelog"
-                title=""
-                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <XdaUrl
+	            id="xda"
+	            title="Forum"
+	            description="Visit the Official HavocOS XDA-Thread for Mi 6">https://forum.xda-developers.com/mi-6/development/rom-havoc-os-t3807517</XdaUrl>
+            <TelegramUrl
+	            id="telegram"
+	            title="Telegram"
+	            description="Join the HavocOS MI6 Telegram Group">https://t.me/havocmi6</TelegramUrl>
             <PaypalUrl
                 id="donation"
                 title=""
