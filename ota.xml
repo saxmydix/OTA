@@ -137,5 +137,28 @@
                 description="">https://www.paypal.me/samandjoe25</PaypalUrl>
        </marlin>
 	    
+	       <a6020>
+            <Filename>Havoc-OS-20180625-A6020-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/a6020/Havoc-OS-20180625-A6020-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for A6020">https://forum.xda-developers.com/k5-plus/development/rom-havoc-os-t3808623/post76910797#post76910797</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/ChaitanayaMittal</PaypalUrl>
+       </a6020>
 	</Stable>
 </SlimOTA>
