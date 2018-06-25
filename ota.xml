@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <oneplus3>
-            <Filename>Havoc-OS-20180621-oneplus3-Official</Filename>
+            <Filename>Havoc-OS-20180624-oneplus3-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/oneplus3/Havoc-OS-20180621-oneplus3-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/oneplus3/Havoc-OS-20180624-oneplus3-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
