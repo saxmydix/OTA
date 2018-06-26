@@ -160,5 +160,25 @@
                 title=""
                 description="">https://www.paypal.me/ChaitanayaMittal</PaypalUrl>
        </a6020>
+
+        	<land>
+            <Filename>Havoc-OS-20180623-land-Official</Filename>
+            <RomUrl
+                id="rom"
+                title="" 
+		description="">https://sourceforge.net/projects/havoc-os/files/land/Havoc-OS-20180623-land-Official.zip/download</RomUrl>
+            <GAppsUrl 
+		id="gapps"
+		title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl id="donation"
+                title=""
+                description="">https://www.paypal.me/SaksHam14</PaypalUrl>
+        </land>
+
 	</Stable>
 </SlimOTA>
