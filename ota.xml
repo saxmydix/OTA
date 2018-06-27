@@ -22,11 +22,11 @@
         </oneplus3>
         
         <whyred>
-            <Filename>Havoc-OS-20180622-whyred-Official</Filename>
+            <Filename>Havoc-OS-20180627-whyred-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/whyred/Havoc-OS-20180622-whyred-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/whyred/Havoc-OS-20180627-whyred-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
