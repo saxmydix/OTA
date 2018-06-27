@@ -89,7 +89,7 @@
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </vince>
     
-	     <s2>
+	    <s2>
             <Filename>Havoc-OS-20180623-s2-Official</Filename>
             <RomUrl
                 id="rom"
@@ -135,9 +135,9 @@
                 id="donation"
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
-       </marlin>
+        </marlin>
 	    
-	       <a6020>
+        <a6020>
             <Filename>Havoc-OS-20180625-A6020-Official</Filename>
             <RomUrl
                 id="rom"
@@ -158,18 +158,18 @@
             <PaypalUrl
                 id="donation"
                 title=""
-                description="">https://www.paypal.me/ChaitanayaMittal</PaypalUrl>
-       </a6020>
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </a6020>
 
-        	<land>
+        <land>
             <Filename>Havoc-OS-20180623-land-Official</Filename>
             <RomUrl
                 id="rom"
                 title="" 
-		description="">https://sourceforge.net/projects/havoc-os/files/land/Havoc-OS-20180623-land-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/land/Havoc-OS-20180623-land-Official.zip/download</RomUrl>
             <GAppsUrl 
-		id="gapps"
-		title=""
+                id="gapps"
+                title=""
                 description="">http://opengapps.org</GAppsUrl>
             <ChangelogUrl
                 id="changelog"
@@ -179,6 +179,24 @@
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </land>
-
+	    
+        <santoni>
+            <Filename>Havoc-OS-20180626-santoni-Official</Filename>
+            <RomUrl
+                id="rom"
+                title="" 
+                description="">https://sourceforge.net/projects/havoc-os/files/santoni/Havoc-OS-20180626-santoni-Official.zip/download</RomUrl>
+            <GAppsUrl 
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </santoni>
 	</Stable>
 </SlimOTA>
