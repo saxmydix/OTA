@@ -22,11 +22,11 @@
         </oneplus3>
         
         <whyred>
-            <Filename>Havoc-OS-20180622-whyred-Official</Filename>
+            <Filename>Havoc-OS-20180627-whyred-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/whyred/Havoc-OS-20180622-whyred-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/whyred/Havoc-OS-20180627-whyred-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
@@ -110,7 +110,7 @@
             <PaypalUrl
                 id="donation"
                 title=""
-                description="">https://www.paypal.me/sahilashraff</PaypalUrl>
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
         </s2>
 
 	    <marlin>
@@ -134,7 +134,7 @@
             <PaypalUrl
                 id="donation"
                 title=""
-                description="">https://www.paypal.me/samandjoe25</PaypalUrl>
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
        </marlin>
 	    
 	       <a6020>
@@ -177,7 +177,7 @@
                 description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
             <PaypalUrl id="donation"
                 title=""
-                description="">https://www.paypal.me/SaksHam14</PaypalUrl>
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
         </land>
 
 	</Stable>
