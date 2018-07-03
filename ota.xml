@@ -214,5 +214,46 @@
                 title=""
                 description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
         </rolex>
+		
+		<starlte>
+            <Filename>Havoc-OS-20180703-starlte-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/starlte/Havoc-OS-20180703-starlte-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+		<PaypalUrl
+                id="donation"
+                title=""
+		description="">https://www.paypal.me/MohamadAfiq</PaypalUrl>
+		</starlte>
+		
+		<star2lte>
+            <Filename>Havoc-OS-20180703-starlte-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/star2lte/Havoc-OS-20180703-star2lte-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+		<PaypalUrl
+                id="donation"
+                title=""
+		description="">https://www.paypal.me/MohamadAfiq</PaypalUrl>
+        </star2lte>
 	</Stable>
 </SlimOTA>
+
