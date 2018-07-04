@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <oneplus3>
-            <Filename>Havoc-OS-20180624-oneplus3-Official</Filename>
+            <Filename>Havoc-OS-20180704-oneplus3-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/oneplus3/Havoc-OS-20180624-oneplus3-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/oneplus3/Havoc-OS-20180704-oneplus3-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
@@ -200,11 +200,11 @@
         </santoni>
 
         <rolex>
-            <Filename>Havoc-OS-20180702-rolex-Official</Filename>
+            <Filename>Havoc-OS-20180703-rolex-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/rolex/Havoc-OS-20180702-rolex-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/rolex/Havoc-OS-20180703-rolex-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
@@ -214,8 +214,27 @@
                 title=""
                 description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
         </rolex>
-		
-		<starlte>
+      
+        <tissot>
+            <Filename>Havoc-OS-20180703-tissot-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/tissot/Havoc-OS-20180703-tissot-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Mi A1">https://forum.xda-developers.com/mi-a1/development/rom-havoc-os-t3811816</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+        </tissot>
+	    	<starlte>
             <Filename>Havoc-OS-20180703-starlte-Official</Filename>
             <RomUrl
                 id="rom"
@@ -229,13 +248,13 @@
                 id="changelog"
                 title=""
                 description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
-		<PaypalUrl
+	        	<PaypalUrl
                 id="donation"
                 title=""
-		description="">https://www.paypal.me/MohamadAfiq</PaypalUrl>
-		</starlte>
+	            	description="">https://www.paypal.me/MohamadAfiq</PaypalUrl>
+	      	</starlte>
 		
-		<star2lte>
+		     <star2lte>
             <Filename>Havoc-OS-20180703-starlte-Official</Filename>
             <RomUrl
                 id="rom"
@@ -249,11 +268,11 @@
                 id="changelog"
                 title=""
                 description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
-		<PaypalUrl
+	         	<PaypalUrl
                 id="donation"
                 title=""
-		description="">https://www.paypal.me/MohamadAfiq</PaypalUrl>
-        </star2lte>
+		            description="">https://www.paypal.me/MohamadAfiq</PaypalUrl>
+     </star2lte>
 	</Stable>
 </SlimOTA>
 
