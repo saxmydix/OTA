@@ -214,5 +214,25 @@
                 title=""
                 description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
         </rolex>
+
+        <tissot>
+            <Filename>Havoc-OS-20180703-tissot-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/tissot/Havoc-OS-20180703-tissot-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Mi A1">https://forum.xda-developers.com/mi-a1/development/rom-havoc-os-t3811816</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+        </tissot>
 	</Stable>
 </SlimOTA>
