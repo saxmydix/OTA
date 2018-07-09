@@ -1,439 +1,283 @@
 ====================
-     06-21-2018
+     07-09-2018
 ====================
 
-
-   * bootable/recovery/
-896f9d3 recovery: Allow device specific backlight path
-ebb529c recovery: Add statusbar margin for panels with rounded corners
-
-   * device/oneplus/oneplus3/
-d356b8b op3: Fix OTG
-be74157 op3: init tweaks
-e4b04e8 op3: Don't build OP cam
-d11ed4a Revert "op3: Remove libcamera_parameters_shim.so"
-5c544c2 Update Big clock padding
 
    * frameworks/base/
-970e4f5 Fix left clock glitch on landscape and cleanup code
-b821c7b Resolve status bar battery percentage tints
-f09f2e5 Resolve status bar VPN icon tints
-7cf3e4f SystemUI: Fix status bar bluetooth <50% drawable
-0658252e Fix Recents
-8494cb8 Add more date styles [1/2]
+87f3b4d Fix Ui Crash on no Weather data
 
-   * hardware/qcom/audio-caf/msm8916/
-8747be1 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
+   * system/security/
+169fff0 key_store:Using euid instead of uid when upgrade wifi blobs
 
-   * hardware/qcom/display-caf/msm8916/
-e7f8039 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
-
-   * hardware/qcom/media-caf/msm8916/
-55e0ac7 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
-
-   * kernel/oneplus/msm8996/
-7152a51 msm: thermal: simple: Fix incorrect notifier priority
-343ad2c msm: thermal: simple: Clean up preprocessor defines
-b6eb83b msm: thermal: simple: Clean up ugly for loop
-34e61d3 msm: thermal: simple: Ensure validate_cpu_freq() only uses valid freqs
-bf825b8 msm: thermal: simple: Dynamically generate thermal zone sysfs nodes
-7b57f29 msm: thermal: simple: Restore the user's maxfreq after throttling
-3742bda msm: thermal: simple: Make get_valid_cpufreq() usage hotplug-safe
-f5c02b8 msm: thermal: simple: Make worker and notifier logic more robust
-4ddb9c5 msm: thermal: simple: Remove user_maxfreq feature
-0739a5f msm: thermal: simple: Fix checkpatch.pl warnings and errors
-d20fb4c remove TSENS as sultans thermal doesn't use it
-
-   * packages/apps/HavocSettings/
-8b5ed32 test
-41c02e8 Custom seekbar pref: allow to refresh values
-dfac2a0 Add more date styles [2/2]
-2ad4fb9 More fixes
-7a9d8e6 Disable recents blur
-311fd96 Fixes
-17a656f Add Power Button Long press Torch and Timeout
-a78e882 Add Flashlight blink on incoming calls
-f6158d4 Fixes
-2e8985b Edit Icon Toggle [2/2]
-15d8e84 Blacklist apps in the ChooserAcitivity (e.g. Share button) [2/2]
-51905a5  FP sensor at screen on only (2/2)  and check if Fingerprint supported
-4e6ffd1 Ensure SlimRecents respects RTL [2/2]
-7031107 Cleanup Ambient music ticker [2/2]
-00a49a1 Add Lockscreen Weather Text Manipulation
-d8586b0 Refactor Havoc Settings
-7d5d2b6 Use OmniSwitch as Alternative Recent
-2e3a299 Move Ambient Display to Havoc Settings
-99ea53f Add weather alternative to ambient bottom view [2/2]
-05c7489 Reimplement Custom scrolling values [2/2]
-ff2d100 Add system event service [1/2]
-eb4e468 Add Changelog
-030e088 Add About section
-4a5b4c7 Cleanup
-bd4ad58 Start Lockscreen shortcut from Havoc settings
-af5d42a Add System Tuner for Statusbar icons
-ecbc096 Add Lockscreen Date n Clock Sizes [2/2]
-61bf0dd featureize ro.recents.grid and Go Layout
-4f89deb Allow disabling of FC dialogs [2/2]
-80a7e5c Add Camera and Safe Headset Volume Switch
-9cd1908 Allow to disable qs footer warnings [2/2]
-25b7ef4 Choose a custom editor app for screenshot notification edit button [2/2]
-eed440c Add an option to force pre-O apps to use full screen aspect ratio
-b8de5c1 Seperate Clock for statusbar and qs panel
-6bf2807 Add Ticker animation
-09bf240 Launch AdAway from Havoc
-cb00016 Add Screen Stabilization
-53762ca Fullscreen alarm [2/2]
-7c372cc Lockscreen Date fonts
-35a0860 Smart Pixels [2/2]
-45c0b82 Hide Lock Icon | Indication & Statusbar [2/2]
-d2628fb System App Remover
-c2eeb2f Allow using framework values for rounded corners [2/2]
-6fed4bd Cleanup not needed stuff
-5a88b7a Add switch for Wake-and-Unlock feature (2/2)
-67a9e75  Allow vibration instead of beep for in-call notifications [2/2]
-3b8e4bf Lockscreen Clock Widget Fonts [2/2]
-320cf3b add back all keyboard IME features back (2/2)
-ac2870e  IME selector notification toggle (1/2)
-2fc6757 Add Trust center
-5bb2be0 Less Notification sounds [2/2]
-eaf79b1 Allow launching lockscreen fragment externally [2/2]
-10eb7a4 Add ability to permanently hide apps from recents [2/3]
-9c6176b  Disable Immersive Messages [2/2]
-28314da Fix Some Errors
-9f218da Disable dashboard suggestions and conditions (1/2)
-185a13a Settings: Recents Styles
-3760746 Add time & date to full screen recents [2/2]
-bdfded0 Custom scrolling values [2/2]
-
-   * packages/services/Telephony/
-0a25a6a Telephony: use SettingsLib styles
-0290f5f ToggleLte: multisim compatibility
-f7677e6 Reload CarrierConfig based on changes to ro.xxx.version
-44c40e1 Restore previous network value after toggleLTE
-9313655 Implement toggleLte
+   * vendor/havoc/
+9f35fa3 Add new fonts
 
 ====================
-     06-20-2018
+     07-08-2018
+====================
+
+
+   * bionic/
+de61db6 Lineage -> havoc
+6147def vdso should be available in all namespaces
+6c46ae7 Fix bug with double unload on unsuccessful dlopen
+3c27bb2 linker: Remove obsolete workaround
+996f95a Switch to FreeBSD's actual sincos
+9a7a9e2 Switch to FreeBSD catrigl.c for complex arc trig functions
+8376710 bionic: Update libm from upstream
+f3ab68b Fix various ftw/nftw "shall fail"s from POSIX
+c57fef1 libc: kryo: import ARM strlen from Apple C library
+289f503 aarch64/strncmp: Use lsr instead of mov+lsr
+0eca49b aarch64: Improve strncmp for mutually misaligned inputs
+c64f553 strcmp.S: Improve performance for misaligned strings
+3f724b0 memcmp.S: optimize for medium to large sizes
+183bdba Remove no_default_compiler_flags from crt*
+de5a642 bionic: strip libc and linker
+97e05e5 libc: Suppress clang 7.0 warnings
+35c6f57 libc: Build crtbegin with clang too
+99c3600 bionic: do not pack relocation table
+659ef83 Enable 32-bit armv8 NEON for libm
+494fd0c kryo: Update routine from moto
+8356d63 Use builtins for ceil/floor/rint/trunc on arm64
+dd5e6bf libc: add optimized ARM64 strrchr from newlib
+13d31d0 Use builtins for fma/fmax/fmin/round on arm64.
+4316e77 Find clang correctly
+4fe4ddc libc: Optimize ARM memcmp by using NEON.
+b7231a0 Remove an obsolete aarch64 hack.
+6260d6f Optimized memcmp
+4601e11 Optimize the clone() system call on ARM(64).
+30855c3 solved infinite loop problem in J7 prime
+
+   * frameworks/av/
+8d02067 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * frameworks/base/
+c69f305 Replaced the ugly data tile with a decent one
+7930310 Tiles : Implement Mobile Data On/Off tile
+1a19576 Change some drawables
+7928003 Don't try to show crash dialog for dead app
+ca500f5 Fix socket leaks in various android.net.Network methods
+10e2b36 Fix IllegalStateException issues in Setttings
+809b403 Fix Build errors  and derps
+
+   * frameworks/native/
+b9ebd95 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * hardware/interfaces/
+8fa26ab Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * hardware/qcom/power/
+2d1ce22 power-845: Fix compilation errors
+9e76194 Fix interaction boost higher cpu freq perflock
+b06e15f power: Adding hints for SDM845
+
+   * lineage-sdk/
+b5e7e75 sdk: Trust: better warnings management
+
+   * manifest/
+678b319 manifest: android-8.1.0_r30 -> android-8.1.0_r36
+8870cf6 lineage: Add sdm845 platform projects
+
+   * packages/apps/HavocSettings/
+775581b Update maintainer strings
+e7ed717 Update Italian translations
+8918718 Disable Ambient Play Preference
+
+   * packages/apps/LineageParts/
+64f1867 parts: Trust: better warnings management
+
+   * packages/apps/Settings/
+b375380 Update NFC drawable
+6c4c5c2 Update Italian translations
+
+   * packages/overlays/Dark/
+093895d Add QS tile colors
+20227aa Initial Dark theme import
+
+   * packages/services/OmniJaws/
+9ae4784 OmniJaws: reduce minimal size of widget
+69b301b OmniJawas: add current weather condition widget
+4d348cb Automatic translation import
+3d99825 Automatic translation import
+
+   * packages/services/Telephony/
+b79a0b0 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+====================
+     07-07-2018
 ====================
 
    * art/
-0f77f6f Improve splitting/spilling position choice.
-6ca3066 ARM64: Workaround for the callee saved FP registers and SIMD.
-737d0bc ARM64: Tune SIMD loop unrolling factor heuristic.
-39a5bef ART: Fix loop header's predecessors reordering in SimplifyLoops.
-98bafa5 ART: Fix SimplifyInduction for an instruction with HEnvironment.
-6a1990e For aosp build with clang master
-9eea9e4 ARM64: Add crc32 instruction feature support.
+7e618b6 art: extend the supported cpu_variant list for arm64
 
-   * frameworks/base/
-a7352b6 Disable Ambient Play by default [1/2]
-123d6d6 SystemUI:Add LTE Tile
-bff1d58 Fix a 'memory leak'
-c0bb0e8 Fix CustomTile NPE in handleRefreshState
-9809630 fix notification transact fail problem
-36273c5 Make dem animations faster
-cbe8bb4 Silence camera policy keyguard check logspam
-c9cb305 CamcorderProfiles: Add new profiles for recorder
-15acda4 Camera: Longshot with Burst Functionality.
-85c3415 base: SystemUI: fix weather tile color
-4b81d37 Cleanup not used stuff and fixes
-bdb0e3c Add Flashlight blink on incoming calls [1/3]
-5f1b26d frameworks: base: Port password retention feature
-7530e7a SlimRec. media info: fallback to notification text if no metadata available [2/2]
-8432b45 Cleanup SlimRecents media info/colors code [2/2]
-dc2f4f4 Fix some refresh issues when changing an overlay
-8c29fe9 Slimrecents media artwork/card color: don't skip navbar blacklisted apps
-40fda3d Slim recents albumart: fix possible NPE for getOriginalLargeIcon().loadDrawable()
-a1d5fa7 Slim Recents: albumart as player card icon when playing a song [2/2]
-212b3dc SlimRecents: if a song is playing, set track info as card title and use albumart
-7be76c0 Stock Recents icon pack code fixes
-6327b7e Edit Icon Toggle [1/2]
-b19a813 Remove useless dream manager isDozing check
-7e94254 SystemUI: disable wallpaper-based tint for scrim
-5d4693c MicroG signature spoofing support
-a27cd0e Lockscreen Fixes
-dcedd96 fw_base: FP sensor at screen on only (1/2)
-3ab77a9 ChooserActivity blacklist: fix FC on clean flash
-a83543a ChooserAcitivity: add blacklist option to items longpress menu
-b0a9b18 Blacklist apps in the ChooserAcitivity (e.g. Share button) [1/2]
-1d1f796 Ambient music: let hide clock and show track info in center screen [1/2]
-83962ab Ambient music ticker minimal layout: fix overlapping notifications
-7106804 SystemUI: change heads up check to panelsEnabled()
-a5a2e77 Cleanup Duplicates
-16ba9a6 Stop ticker on theme changes
-7e466e4 base: recents: properly size task lock icon in stock recents
-e1f0572 Stock Recents: bigger size also for the header overlay icon
-9e80b93 SlimRecents: add fingerprint scanner gestures [2/2]
-1b618f8  [Squash] Add LS Weather Text Font Style and Size
-6905624 Lockscreen Alarm Size
-b0307a1 Lets fix up the Lockscreen UI bugs
-c5566e6 Fix recents animation
-116c4f6 Fix missing lockscreen shortcut icons after reboot
-fea6082 Lower Haptic Vibration on Tiles
-7eb6245 Add weather alternative to ambient bottom view [1/2]
-b8ae686 FWB: Volume dialog timeout (1/2)
-a025f9e Introduce Ambient Play feature [2/2]
-a6c2a03 Add an option to force pre-O apps to use full screen aspect ratio
-b3f51d1 Hide QS divider
-97a2091 SystemUI: Toggle USB tethering only when USB is connected
-f96126a [1/2] base: hide lock screen icon
-b21f6ee [1/2] base: hide indicator text
+   * build/make/
+c7371a9 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
 
-   * frameworks/havoc/
-14f103d lottie: Import annotations as shared lib
-40275cb Import Lottie by Airbnb
-3cb6036 Initial commit
+   * build/soong/
+05c54d6 cc/clang: flto* to match soong master branch
+372a57e cc/arm: go back to targetting a53 to match soong master branch
+3cae0e3 cc/arm64: ensure we're fixing 843819
+e9125ff cc/clang: build all of clang with O3
+27a2b09 cc/global: add ftree-partial-pre and fivopts
+63617f8 Remove fira-hoist-pressure
+356fda7 cc/global: disable alignment
+45dae54 cc/global: move O2 and g0 to top
+79f870e cc/arm_device: return kryo targetting to cortex_a15
+87dbdfc cc/arm_device: remove funswitch-loops
+6c77ca8 cc/arm_device: Remove gcse
+585ff43 cc/arm64_device: we dont need to fix arm errata for kryo
+64c98e5 cc/arm64_device: remove gcse
+9c0cbf3 cc:global/clang: remove alignment and update gcc flags
+e204c93 cc/sanitize: enable neon in LdFlags
+42d6ca2 cc/arm64_device: Ensure correct cortex-a53 targetting
+af7b5ae cc/arm_device: Ensure -O2 and disable debugging
+965117e cc/builder: AR flags should be crs not cqs
+cd4e152 Add LTO support
+0f2f2a6 global: disable ftree-vectorize
+459dac4 arm: disable ftree-vectorize
+63aaeb7 cc/config/global-clang: Align loops/functions
+a3da744 cc/confing/arm64_device.go: Target a57
+9523faf androic/arch.go: Target armv7-a-neon for armeabi
+3ae872b config: Add -fno-gcse to global and clang unkown
+9c6c944 cc/config/arm_device.go: force cortex-a53 for 32bit
+f8c7120 cc/config/clang.go: Update clang unknown flags
+44e1554 cc/config/global.go: Add ftree-vectorize/no-prefetch-loop-arrays
+63fdbfa cc/config/arm_device.go: Force -O2 on thumb
+f2008a5 cc/config/arm64_device.go: convert a57 to a53
+22548db cc/config: arm: hardcode arch/fpu values
+b9adfce cc/config: arm64: remove omit-frame-pointer
+96e00bf cc/config: arm: update armv7-a fpu to vfp4-d32
+8575ad6 cc/config: arm: disable debugging flag
+91d6c85 cc/config: Add cortex-a57 arch flags to cflags for arm64
+18f024a cc/config: Actually disable debugging
+cc12629 soong: Add kryo300 cpu variant to build/song
 
-   * kernel/oneplus/msm8996/
-5d0b91e added sultans simple thermal and disabled old core control
-9276136 dts: msm8996.dtsi: disable core control
-0c94474 (Squash) thermal: Add simple standalone MSM thermal solution By: @Sultanxda * Commits have been Squashed down to 1 single commit for easier pick from * others that might want to use it. Remember to credit original Author @Sultanxda.
-1d2478b kernel: Fix massive cpufreq stats memory leaks
-9cb426f drm: msm: Mark IRQ and important kthreads as performance critical
-af65e5f stune_assist: wire to cpu-boost driver
-0ba0d42 enable sched tune assit
-50bbfa3 sched/tune: add schedtune assist for setting stune boost from kernel
-3bf5480 kernel/tune: add function for changing stune boost value
-77590a1 cpu-boost: set default stune boost to 10
-0cb9de3 give fp more priority
-3c6f8e6 bump version
-
-   * manifest/
-66fedd9 Test
-4fd4bc4 Track old slim
-
-   * packages/apps/HavocSettings/
-02b84b4 Smartbar pixel animation: Ability to customize the dots [3/3]
-a5eb092 Pulse: allow setting fading blocks opacity [3/3]
-571dc7e Make Smartbar Pixel Animation Durations Customizable [3/3]
-252c70b Option to disable music track title in QS tile [2/2]
-7d2b28f Power menu: dim dialog and transparency
-a82714b Volume Dialog Customizations [2/2]
-97a9825 Add all Headsup Settings
-75e3ba8 BT Headset music launch actions [2/2]
-cbf6eb9 Suspend Actions [3/3]
-98f23ca DUI Pulse: add Automatic albumart base color mode [3/3]
-b74fbcc Allow to suppress notifications sound/vibration [2/2]
-3aa832d Move sounds to Sound Section
-38a458c Move all fp settings to Fingerprint Section
-8721c5d Create Fingerprint and Sound fragment
-649517b Add statusbar weather [2/2]
-895e571 Add Statusbar Logo
-284d92e Unlock keystore with fingerprint after reboot (2/2)
-6cba03f Add back settings for accidental touch prevention
-6907280 Add all animations
-7af3c39 QS tile titles visibility [2/2]
-20daf39 Add deep clear feature for dismiss button [2/2]
-eb72a9d Optional screenshot type [2/2]
-8b89b3e Toast icon switch [2/2]
-83769d6 Immersive Recents [2/2]
-b0075b6 Force Expanded Notifications [2/2]
-88b6735 Slim Recents 3.0 [3/3]
-e2de5a1 Stock Recents icon packs support [2/2]
-dcd4186 Disable Quick Settings on secure lockscreen (2/2)
-30806bb Hide power menu on secure lockscreen [2/2]
-9b496fd Vibrate on plug [2/2]
-0dd0921 Add Dynamic Navbar capability [2/2]
-b8d53c2 Add three-fingers-swipe to screenshot [2/2]
-542b121 Recents: Make lock task and dismiss icons optional [2/2]
-327a947 Allow toggling auto usb mode chooser activity [3/3]
-2472040 Add navbar double tap to sleep [2/2]
-3ed6add Add membar to recents options [2/2]
-dd434d7 Add Clock positions (2/2)
-
-   * packages/apps/Settings/
-7b171d7 Add Pie activity and fix FC on enter settings
-b9574b9 Disable Ambient Play by default [2/2]
-df7d4fd AmbientPlay: allow user to opt-out entirely [1/2]
-4faa68c AmbientPlay: Adjust illustration for dark themes
-913bed9 Introduce Ambient Play feature [1/2]
-c9c4cd1 Add A2DP and wired headset event handling [2/2]
-b9a5209 Settings: add system event service [2/2]
-9ec2f64 Alert when screen off and charging if charge level becomes good [2/2]
-63a8685 fuelgauge: add back battery level animation
-b94c4fe Settings - Add CM's preference files
-0c4a3d4 Settings - Add double tap option to lockscreen shortcuts [2/2]
-aacafc5 Settings - DSLV: Resize system icons to match vector drawable size
-148ac56 Settings - Lockscreen shortcuts improvements [2/2]
-e9fc0ff Settings - dslv: Remove add icon. We already have a FAB
-b09a213 Settings - Add new lockscreen shortcuts icons
-d29c9c9 Settings - dslv: Bring in FAB for Lockscreen Shortcuts
-f04d681 Settings - Slim DSLV improvement
-92c874c Settings - add user configurable lockscreen shortcuts [2/2]
-de2adb0 Settings - Materialize DSLV
-6724cd4 Settings - add dslv controller
-5cd6d70 Settings - add central slim ActionListViewSettings class back...
-
-   * packages/services/Telecomm/
-2c9e235 Telecomm: Add Flashlight blink on incoming calls [3/3]
-
-   * vendor/havoc/
-5a9c359 Update Launcher
-
-====================
-     06-19-2018
-====================
-
-
-   * frameworks/av/
-3f34f5b Revert "FAV: Add the needed stuffs for OnePlusCamera to work"
-
-   * hardware/qcom/fm/
-4a8b046 Automatic translation import
-
-   * kernel/oneplus/msm8996/
-d19ab35 cpuidle: remove cross-cpu IPI by new latency request.
-042e001 rcu: Force wakeup of rcu_gp_kthread at grace-period end
-20ec47b set it to true again
-9569e33 removed graphite to make apps load fast
-179770c Added Adreno Boost
-a174ef0 made adreno false by default and few tweaks
-
-   * manifest/
-a14ddac Track slim recents
-
-   * packages/apps/AudioFX/
-ee86521 Automatic translation import
-
-   * packages/apps/DeskClock/
-1df04d3 Automatic translation import
-
-   * packages/apps/Dialer/
-4e84196 Automatic translation import
-
-   * packages/apps/Gallery2/
-ed26917 Automatic translation import
-
-   * packages/apps/Jelly/
-f96f9a5 Automatic translation import
-
-   * packages/apps/LockClock/
-2af5fd2 Automatic translation import
-
-   * packages/apps/Recorder/
-8dce1e9 Automatic translation import
-
-   * packages/apps/Snap/
-f37c0a7 Automatic translation import
-
-   * packages/apps/Trebuchet/
-de6e8d4 Automatic translation import
-
-====================
-     06-18-2018
-====================
-
-
-   * bootable/recovery/
-85b7010 recovery: Do not show emulated when data is encrypted
-
-   * device/motorola/msm8916-common/
-91c86eb msm8916-common: Revert device specific changes
-87aec5e msm8916-common: Device has camera HDR
-3316a22 msm8916-common: Update configs
-
-   * hardware/lineage/interfaces/
-2b941ed livedisplay: Fix uninitialized default PA
-
-   * kernel/oneplus/msm8996/
-82eb5d8 enabled cpu wake boost
-45ea56c cpufreq: Introduce CPU wake boost driver
-9598592 mmc: queue: Configure the I/O sched switcher for mmc block devices
-354d17e iosched_switcher: Use reliable state notifier
-acea965 block: Add driver to change the I/O scheduler when the screen turns off
-7bb7eab drivers: state_notifier: Add toggle to enable driver
-1900af2 mido: import stock flashlight driver
-f04b193 cpu-boost: Implement Dynamic SchedTune Boost v3
-30bf4e1 sched/tune: Add initial support for Dynamic SchedTune Boost
-5df4254 Revert "cpu-boost: Introduce Dynamic Stune Boost"
-b4ac71c proc: Remove additional SafetyNet flags from /proc/cmdline
-ca49acc proc: Remove verifiedbootstate flag from /proc/cmdline
-1dad495 dts: Remove dm-verity flags
-ccfc1f2 lib/ubsan.c: s/missaligned/misaligned/
-04228f7 sound: wcd9335: Disable g_DebugMode
-0650bad Initial AudioWizard bringup
-181fe85 sound: DTS-Eagle integration
-c321482 drivers: Initial import of DTS-Eagle driver
-9dc3395 Kconfig: msm: remove deprecated dts eagle driver
-dd515b8 force up cpu for hotplug
-
-   * packages/apps/Contacts/
-8b9aeff Revert "Automatically set SIM number to my profile"
-
-   * packages/apps/Trebuchet/
-ea10531 IconCache: fix nullpointer exceptions
-
-   * vendor/havoc/
-6c3f969 Add Transparent clock
-239e933 Add Avengers clock
-71251fd Add White clock
-a750b56 Add Spiderman clock
-c7a4ba2 Remove DU clock
-
-====================
-     06-17-2018
-====================
-
+   * device/havoc/sepolicy/
+68c0331 Make fuseblk use vfat context
 
    * device/oneplus/oneplus3/
-bc44a3d op3: Update Camera apps
-5b365a1 op3/t: display: update s6e3fa5's standard profile from ob29.
-4fca33b op3: Remove libcamera_parameters_shim.so
-58da8ff op3: Update blobs from OB37/OB28
-23aa2b8 op3: Set vendor security patch level
-ff5b44d op3: Avoid conflicting with common thermal/vr hal
+57adf29 op3: init tweaks
+66bcc5f op3: Update GCam
+8941804 op3: doze: use ExecutorService for listener registration
+f7feb93 op3: Drop deprecated OpenGLRenderer props
+248c9e4 op3: Enable auto brightness by default
 
-   * device/qcom/sepolicy/
-dfa3c0e common: Fix labelling of lcd-backlight
+   * frameworks/base/
+b9b458b Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo-rebase
+76aaadd LS Weather and icon fix
+f252524 base: Modified that logs do not include URLs
+df66504 bgdexopt: Let PM handler run between optimizations
+d4325ab BgDexopt: Reschedule job on timeout
+7740cea Run BackgroundDexOptService with background prio
+da45e99 Fix MtpDatabase multithreading NullPointerException
+db1aadb Convert between MtpObject and MediaProvider path
+ac37509 CPUInfoService: Add config for temperature sysfs path
+01d7fbb Fix the NUllPointException for SystemUI crash
+01c1268 DozeUI: Remove unusual static method call
+fca3f82 NetworkStats: Fix forced floating-point math performance
+688c88a Ensure re-post with setOnlyAlertOnce(true) silences sound
+2ad7a40 Fix foreground process killed when it uses content provider
+bf2836c DeathRecipient object leak in context of system server
+979dfcf pms: Skip from copying preopts if device is undecrypted
+cf371bd Add ability to configure battery saver mode color (1/2)
+d5bb82c Kill Ambient Play
+2efd739 Round the autofill dialog
+0ca306b Themes: fix autofill saved entries picker dialog
+241f7b3 Update Italian translations
+ffa8972 BoostFramework to enhance performance during critical  scenarios
+a814cf88a wifidisplay: Modify WifiDisplayController
+a72db7e wifidisplay: Use ExtendedRemoteDisplay to launch Wifi Display.
+f21e303 base: limit direct share targets to reduce lag
+8e3ddf8 Telephony: Stop using rssnr, it falsly shows wrong signal bars
+4238abe Add Alarm Font (1/2)
+046736d Fix SysUi FC and optimize
 
-   * lineage-sdk/
-bb5788b TrustInterface: Handle unsupported encryption state
-47c590c Trust: add action to disable alerts to notifications
-ad52e00 Lineage style interface: fix possible NPE when OMS is not up on start
-3546673 Fix long screen settings for multi user
-6012461 Havoc: Ambient visualizer
+   * frameworks/native/
+0791974 Merge tag 'android-8.1.0_r36' into HEAD
 
-   * manifest/
-2f21030 manifest: Remove external/libvorbis
-8413777 Sync LineageOS qcom thermal and vr HALs
-6e0d8fc Switch to our system/security fork
+   * hardware/qcom/display-caf/msm8998/
+9fa8467 gralloc: Add missing BT601_6_625 handing
+20bd3e8 gralloc1: Add support for secure display.
+6c718aa liblight: Use char array instead of char pointer array for file name
 
-   * packages/apps/LineageParts/
-640256c LineageParts: Add an option to force pre-O apps to use full screen aspect ratio
-122e26d Exclude trust onboarding from recents
-0485bfa LineageParts: fix Trust onBoarding completion when clicking
-091ef74 parts: add SMS rate limit setting
-4d1525d LineageParts: introduce Trust interface
+   * packages/apps/HavocSettings/
+d31e55c Add ability to configure battery saver mode color (2/2)
+293b207 Add Alarm font stlye
+7fa65c5 Cleanup
+b4d7855 Fit OwnerTextSize to Base
+f437706 Add s7 maintainer
+6a780b6 Remove Weather icon color
+d8dc856 Allow to dismiss notifications with FP left/right swipe [2/2]
 
    * packages/apps/Settings/
-d1a1acf Add HAFR Activity
-1d1c094 Add Dashboard Suggestion & Condition
+3459195 Revert "Add preference for Ambient Play"
 
-   * packages/apps/SlimRecents/
-59a7dba Improve compatibility with LMT and other apps that don't preload recents
-3c49350 SlimRecents: append next alarm status to Clock title if available
-3ce62ba Fix FC on swipe gesture when no recent apps
-57f9189 SlimRecents: add fingerprint scanner gestures [1/2]
-459300e SlimRec. media info: fallback to notification text if no metadata available [1/2]
-20f66ed Cleanup SlimRecents media info/colors code [1/2]
-ef49601 Cleanup: use existing DUtils UserContentObserver
-5165077 Ensure SlimRecents respects RTL [1/2]
-af634ba Spring cleanup: don't create unused thumbnails cache
-37fbda7 Show current playing task after favorites but before other ones
-a903529 Track info: show duration before artist and title
-0e33f4c Slim Recents: albumart as player card icon when playing a song [1/2]
-271ea06 More panel toggling code cleanup
-93628d7 If a song is playing, set track info as card title and use albumart color as card color if automatic color is set for cards [1/2]
+   * packages/overlays/Black/
+085fbb7 Add QS tile colors
+de02fb1 Initial Black theme import
 
-   * packages/providers/MediaProvider/
-6614713 MediaProvider: Fix scan on boot notification
+====================
+     07-06-2018
+====================
 
-   * vendor/havoc/
-374a4e3 Update wallpapers
-aa8d354 Update apps
-af88483 apns-conf: Remove obsolete APNs for PT carriers
-bbe1a7c lineage: qcom: Set thermal & vr HAL pathmaps
-7a0162e repopick: Update SSH queries result to match HTTP queries
-39fa19d Add deep night clock
-fbda142 Add custom Deadpool and DU clocks
+
+   * build/make/
+35ffd20 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * frameworks/av/
+cdbf4e1 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * frameworks/base/
+4489d3a Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * hardware/interfaces/
+813c5f1 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * packages/apps/Bluetooth/
+0a28dac Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * packages/apps/Settings/
+48ac937 Improve Wi-Fi settings UI
+
+   * packages/apps/Trebuchet/
+ac3aaac Trebuchet: use system's accent
+6d57dbb Trebuchet: the superior siege weapon doesn't need paddings in allApps' icons
+
+   * packages/services/Telephony/
+b617e90 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * system/bt/
+9ed246c Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * system/libhidl/
+c5df720 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+====================
+     07-05-2018
+====================
+
+
+   * bionic/
+8325732 libc: kryo300 specific memory routine
+
+   * hardware/qcom/audio-caf/sdm845/
+8c36c2a audio: Use direct project pathmap
+
+   * hardware/qcom/display-caf/sdm845/
+d84e910 libdisplayconfig: Remove android.hidl.base
+40e1f9e Don't build lights module if vendor supplies it
+af5514f display: Use project pathmap
+
+   * hardware/qcom/media-caf/sdm845/
+48ace00 media: libOmxSw encoders require prop headers :(
+bf3b85e media: Use project pathmap
+
+   * packages/apps/HavocSettings/
+fbde95d Enable max Lockscreen Notification
+b9a9c58 Add HI6250 maintainer
+744a1ef Add Starlte maintainer
+1ec190e Add tissot maintainer
+
+   * packages/apps/Trebuchet/
+7c88420 IconPicker: clone drawables array to prevent IOOBE
 
