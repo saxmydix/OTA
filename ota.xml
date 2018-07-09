@@ -343,6 +343,44 @@
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </j5xnlte>
+	<herolte>
+	    <Filename>Havoc-OS-20180709-herolte-Official</Filename>
+	    <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/herolte/Havoc-OS-20180709-herolte-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </herolte>
+	<hero2lte>
+	    <Filename>Havoc-OS-20180709-hero2lte-Official</Filename>
+	    <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/hero2lte/Havoc-OS-20180709-hero2lte-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </hero2lte>    
 	</Stable>
 </SlimOTA>
 
