@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <oneplus3>
-            <Filename>Havoc-OS-20180621-oneplus3-Official</Filename>
+            <Filename>Havoc-OS-20180704-oneplus3-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/oneplus3/Havoc-OS-20180621-oneplus3-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/oneplus3/Havoc-OS-20180704-oneplus3-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
@@ -20,5 +20,329 @@
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </oneplus3>
-    </Stable>
+        
+        <whyred>
+            <Filename>Havoc-OS-20180708-whyred-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/whyred/Havoc-OS-20180708-whyred-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </whyred>
+
+        <sagit>
+            <Filename>Havoc-OS-20180624-sagit-Official.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Download"
+                description="Download latest Official builds">https://sourceforge.net/projects/havoc-os/files/sagit</RomUrl>
+            <SagitFirmwareUrl
+                id="SagitFirmware"
+                title="Firmware"
+                description="Download recommended Firmware">https://goo.gl/T9nC6Z</SagitFirmwareUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Mi 6">https://forum.xda-developers.com/mi-6/development/rom-havoc-os-t3807517</XdaUrl>
+            <TelegramUrl
+                id="telegram"
+                title="Telegram"
+                description="Join the HavocOS MI6 Telegram Group">https://t.me/havocmi6</TelegramUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </sagit>
+        
+        <vince>
+            <Filename>Havoc-OS-20180705-vince-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/vince/Havoc-OS-20180705-vince-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Redmi 5 Plus">https://forum.xda-developers.com/mi-6/development/rom-havoc-os-t3807517</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </vince>
+    
+        <s2>
+            <Filename>Havoc-OS-20180708-s2-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/s2/Havoc-OS-20180708-s2-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for LeEco Le 2">https://forum.xda-developers.com/le-2/development/8-1-0-havoc-os-t3807772</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </s2>
+
+        <marlin>
+            <Filename>Havoc-OS-20180623-marlin-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/marlin/Havoc-OS-20180705-marlin-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for marlin">https://forum.xda-developers.com/pixel-xl/development/rom-havoc-os-t3808030</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </marlin>
+	    
+        <a6020>
+            <Filename>Havoc-OS-20180625-A6020-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/a6020/Havoc-OS-20180625-A6020-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for A6020">https://forum.xda-developers.com/k5-plus/development/rom-havoc-os-t3808623/post76910797#post76910797</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </a6020>
+
+        <land>
+            <Filename>Havoc-OS-20180708-land-Official</Filename>
+            <RomUrl
+                id="rom"
+                title="" 
+                description="">https://sourceforge.net/projects/havoc-os/files/land/Havoc-OS-20180708-land-Official.zip/download</RomUrl>
+            <GAppsUrl 
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </land>
+	    
+        <santoni>
+            <Filename>Havoc-OS-20180626-santoni-Official</Filename>
+            <RomUrl
+                id="rom"
+                title="" 
+                description="">https://sourceforge.net/projects/havoc-os/files/santoni/Havoc-OS-20180626-santoni-Official.zip/download</RomUrl>
+            <GAppsUrl 
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl 
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </santoni>
+
+        <rolex>
+            <Filename>Havoc-OS-20180709-rolex-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/rolex/Havoc-OS-20180709-rolex-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </rolex>
+      
+        <tissot>
+            <Filename>Havoc-OS-20180704-tissot-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/tissot/Havoc-OS-20180704-tissot-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Mi A1">https://forum.xda-developers.com/mi-a1/development/rom-havoc-os-t3811816</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </tissot>
+
+        <sanders>
+            <Filename>Havoc-OS-20180705-sanders-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/sanders/Havoc-OS-20180705-sanders-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </sanders>
+
+        <starlte>
+            <Filename>Havoc-OS-20180708-starlte-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/starlte/Havoc-OS-20180708-starlte-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </starlte>
+		
+        <star2lte>
+            <Filename>Havoc-OS-20180708-starlte-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/star2lte/Havoc-OS-20180708-star2lte-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </star2lte>
+
+        <hi6250>
+            <Filename>Havoc-OS-20180708-hi6250-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/hi6250/Havoc-OS-20180708-hi6250-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </hi6250>
+
+        <j5xnlte>
+            <Filename>Havoc-OS-20180709-j5xnlte-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/j5xnlte/Havoc-OS-20180709-j5xnlte-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </j5xnlte>
+	</Stable>
 </SlimOTA>
+
