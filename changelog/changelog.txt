@@ -1,16 +1,83 @@
 ====================
+     07-10-2018
+====================
+
+
+   * build/make/
+3d776c8 build: recovery: add vendor to exclusion list
+64b81b5 Set warning on clang set to false
+
+   * device/motorola/msm8916-common/
+7425975 Init Havoc...
+
+   * device/motorola/osprey/
+9ecfe55 Init Havoc ...
+
+   * frameworks/base/
+3a6b7b1 sdf
+057da56 df
+81cc7b7 Keyguard: Add Weather styles
+9f5003d Lockscreen Weather is so boring. Lets tune it.
+8772f64 SystemUI: Add Gesture Anywhere Tile
+6306fbc Add EdgeGesture Tile
+3798345 Use Slashify for Suspend actions tile
+2e10696 SystemUI: Add Supsend Action Tile
+6ceadfa Fix Ui Crash on no Weather data
+
+   * hardware/qcom/fm/
+8bfd71d Automatic translation import
+
+   * packages/apps/DeskClock/
+fcb62a0 Automatic translation import
+
+   * packages/apps/Dialer/
+863f51c Automatic translation import
+
+   * packages/apps/Eleven/
+3f6ab56 Automatic translation import
+
+   * packages/apps/FMRadio/
+08e0450 Automatic translation import
+
+   * packages/apps/Gallery2/
+261f4be Automatic translation import
+
+   * packages/apps/HavocSettings/
+89fbe03 Add Lockscreen Weather Styles
+fb8a38e Use SecureSettings to Make Tiles work
+
+   * packages/apps/Jelly/
+710ad2c Automatic translation import
+
+   * packages/apps/LockClock/
+fa4ae5e Automatic translation import
+
+   * packages/apps/Recorder/
+0eaeb01 Automatic translation import
+
+   * packages/apps/Snap/
+95ef4ef Automatic translation import
+
+   * packages/apps/Terminal/
+8851f95 Automatic translation import
+
+   * packages/apps/Trebuchet/
+800007b Automatic translation import
+
+   * packages/providers/WeatherProvider/
+e5fa65a Automatic translation import
+
+   * vendor/havoc/
+24297be Change dpi
+fa341b5 Add new fonts
+
+====================
      07-09-2018
 ====================
 
 
-   * frameworks/base/
-87f3b4d Fix Ui Crash on no Weather data
-
    * system/security/
 169fff0 key_store:Using euid instead of uid when upgrade wifi blobs
-
-   * vendor/havoc/
-9f35fa3 Add new fonts
 
 ====================
      07-08-2018
@@ -19,6 +86,45 @@
 
    * bionic/
 de61db6 Lineage -> havoc
+
+   * device/oneplus/oneplus3/
+700ebf4 Introduce Spectrum Kernel Manager and access on boot
+
+   * frameworks/base/
+c69f305 Replaced the ugly data tile with a decent one
+7930310 Tiles : Implement Mobile Data On/Off tile
+1a19576 Change some drawables
+7928003 Don't try to show crash dialog for dead app
+ca500f5 Fix socket leaks in various android.net.Network methods
+10e2b36 Fix IllegalStateException issues in Setttings
+809b403 Fix Build errors  and derps
+
+   * hardware/qcom/power/
+2d1ce22 power-845: Fix compilation errors
+9e76194 Fix interaction boost higher cpu freq perflock
+b06e15f power: Adding hints for SDM845
+
+   * packages/apps/HavocSettings/
+775581b Update maintainer strings
+e7ed717 Update Italian translations
+8918718 Disable Ambient Play Preference
+
+   * packages/apps/Settings/
+b375380 Update NFC drawable
+6c4c5c2 Update Italian translations
+
+   * packages/overlays/Dark/
+093895d Add QS tile colors
+20227aa Initial Dark theme import
+
+====================
+     07-07-2018
+====================
+
+   * art/
+7e618b6 art: extend the supported cpu_variant list for arm64
+
+   * bionic/
 6147def vdso should be available in all namespaces
 6c46ae7 Fix bug with double unload on unsuccessful dlopen
 3c27bb2 linker: Remove obsolete workaround
@@ -47,68 +153,6 @@ b7231a0 Remove an obsolete aarch64 hack.
 6260d6f Optimized memcmp
 4601e11 Optimize the clone() system call on ARM(64).
 30855c3 solved infinite loop problem in J7 prime
-
-   * frameworks/av/
-8d02067 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * frameworks/base/
-c69f305 Replaced the ugly data tile with a decent one
-7930310 Tiles : Implement Mobile Data On/Off tile
-1a19576 Change some drawables
-7928003 Don't try to show crash dialog for dead app
-ca500f5 Fix socket leaks in various android.net.Network methods
-10e2b36 Fix IllegalStateException issues in Setttings
-809b403 Fix Build errors  and derps
-
-   * frameworks/native/
-b9ebd95 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * hardware/interfaces/
-8fa26ab Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * hardware/qcom/power/
-2d1ce22 power-845: Fix compilation errors
-9e76194 Fix interaction boost higher cpu freq perflock
-b06e15f power: Adding hints for SDM845
-
-   * lineage-sdk/
-b5e7e75 sdk: Trust: better warnings management
-
-   * manifest/
-678b319 manifest: android-8.1.0_r30 -> android-8.1.0_r36
-8870cf6 lineage: Add sdm845 platform projects
-
-   * packages/apps/HavocSettings/
-775581b Update maintainer strings
-e7ed717 Update Italian translations
-8918718 Disable Ambient Play Preference
-
-   * packages/apps/LineageParts/
-64f1867 parts: Trust: better warnings management
-
-   * packages/apps/Settings/
-b375380 Update NFC drawable
-6c4c5c2 Update Italian translations
-
-   * packages/overlays/Dark/
-093895d Add QS tile colors
-20227aa Initial Dark theme import
-
-   * packages/services/OmniJaws/
-9ae4784 OmniJaws: reduce minimal size of widget
-69b301b OmniJawas: add current weather condition widget
-4d348cb Automatic translation import
-3d99825 Automatic translation import
-
-   * packages/services/Telephony/
-b79a0b0 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-====================
-     07-07-2018
-====================
-
-   * art/
-7e618b6 art: extend the supported cpu_variant list for arm64
 
    * build/make/
 c7371a9 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
@@ -162,6 +206,9 @@ cc12629 soong: Add kryo300 cpu variant to build/song
 f7feb93 op3: Drop deprecated OpenGLRenderer props
 248c9e4 op3: Enable auto brightness by default
 
+   * frameworks/av/
+8d02067 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
    * frameworks/base/
 b9b458b Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo-rebase
 76aaadd LS Weather and icon fix
@@ -190,15 +237,30 @@ a72db7e wifidisplay: Use ExtendedRemoteDisplay to launch Wifi Display.
 f21e303 base: limit direct share targets to reduce lag
 8e3ddf8 Telephony: Stop using rssnr, it falsly shows wrong signal bars
 4238abe Add Alarm Font (1/2)
-046736d Fix SysUi FC and optimize
 
    * frameworks/native/
+b9ebd95 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
 0791974 Merge tag 'android-8.1.0_r36' into HEAD
 
-   * hardware/qcom/display-caf/msm8998/
-9fa8467 gralloc: Add missing BT601_6_625 handing
-20bd3e8 gralloc1: Add support for secure display.
-6c718aa liblight: Use char array instead of char pointer array for file name
+   * hardware/interfaces/
+8fa26ab Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * kernel/oneplus/msm8996/
+6628860 bump version
+9500520 x86 idle: Repair large-server 50-watt idle-power regression
+079b05a lib/bsearch.c: micro-optimize pivot position calculation
+cfa9b68 power: msm-core: Add missing NULL pointer check in msm_core_ioctl()
+cc34988 added some optimizations
+9d4090f make wakeboost to 1sec
+dfba52e block: hardlimit for io schedulers
+d72e757 ARM: dts: msm: Add GPU speed bin 2 support for MSM8996v3
+
+   * lineage-sdk/
+b5e7e75 sdk: Trust: better warnings management
+
+   * manifest/
+678b319 manifest: android-8.1.0_r30 -> android-8.1.0_r36
+8870cf6 lineage: Add sdm845 platform projects
 
    * packages/apps/HavocSettings/
 d31e55c Add ability to configure battery saver mode color (2/2)
@@ -209,12 +271,24 @@ f437706 Add s7 maintainer
 6a780b6 Remove Weather icon color
 d8dc856 Allow to dismiss notifications with FP left/right swipe [2/2]
 
+   * packages/apps/LineageParts/
+64f1867 parts: Trust: better warnings management
+
    * packages/apps/Settings/
 3459195 Revert "Add preference for Ambient Play"
 
    * packages/overlays/Black/
 085fbb7 Add QS tile colors
 de02fb1 Initial Black theme import
+
+   * packages/services/OmniJaws/
+9ae4784 OmniJaws: reduce minimal size of widget
+69b301b OmniJawas: add current weather condition widget
+4d348cb Automatic translation import
+3d99825 Automatic translation import
+
+   * packages/services/Telephony/
+b79a0b0 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
 
 ====================
      07-06-2018
@@ -224,14 +298,28 @@ de02fb1 Initial Black theme import
    * build/make/
 35ffd20 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
 
+   * device/motorola/msm8226-common/
+9e3a71c Build Snap
+b83430c Enable AOD
+3f92cdd msm8226-common: Use new values for AIDs
+
+   * device/oppo/common/
+f53520f ConfigPanel: Remove useless icon space
+
    * frameworks/av/
 cdbf4e1 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
 
    * frameworks/base/
+046736d Fix SysUi FC and optimize
 4489d3a Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
 
    * hardware/interfaces/
 813c5f1 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
+
+   * hardware/qcom/display-caf/msm8998/
+9fa8467 gralloc: Add missing BT601_6_625 handing
+20bd3e8 gralloc1: Add support for secure display.
+6c718aa liblight: Use char array instead of char pointer array for file name
 
    * packages/apps/Bluetooth/
 0a28dac Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
@@ -251,33 +339,4 @@ b617e90 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r3
 
    * system/libhidl/
 c5df720 Merge tag 'android-8.1.0_r36' into staging/lineage-15.1-android-8.1.0_r36
-
-====================
-     07-05-2018
-====================
-
-
-   * bionic/
-8325732 libc: kryo300 specific memory routine
-
-   * hardware/qcom/audio-caf/sdm845/
-8c36c2a audio: Use direct project pathmap
-
-   * hardware/qcom/display-caf/sdm845/
-d84e910 libdisplayconfig: Remove android.hidl.base
-40e1f9e Don't build lights module if vendor supplies it
-af5514f display: Use project pathmap
-
-   * hardware/qcom/media-caf/sdm845/
-48ace00 media: libOmxSw encoders require prop headers :(
-bf3b85e media: Use project pathmap
-
-   * packages/apps/HavocSettings/
-fbde95d Enable max Lockscreen Notification
-b9a9c58 Add HI6250 maintainer
-744a1ef Add Starlte maintainer
-1ec190e Add tissot maintainer
-
-   * packages/apps/Trebuchet/
-7c88420 IconPicker: clone drawables array to prevent IOOBE
 
