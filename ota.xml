@@ -114,11 +114,11 @@
         </s2>
 
         <marlin>
-            <Filename>Havoc-OS-20180623-marlin-Official</Filename>
+            <Filename>Havoc-OS-20180710-marlin-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/marlin/Havoc-OS-20180705-marlin-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/marlin/Havoc-OS-20180710-marlin-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
