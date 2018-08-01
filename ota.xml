@@ -158,11 +158,11 @@
         </marlin>
 	    
         <A6020>
-            <Filename>Havoc-OS-20180719-A6020-Official</Filename>
+            <Filename>Havoc-OS-20180731-A6020-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/a6020/Havoc-OS-20180719-A6020-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/a6020/Havoc-OS-20180731-A6020-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
