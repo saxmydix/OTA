@@ -221,15 +221,19 @@
         </santoni>
 
         <rolex>
-            <Filename>Havoc-OS-20180715-rolex-Official</Filename>
+            <Filename>Havoc-OS-20180801-rolex-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/rolex/Havoc-OS-20180715-rolex-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/rolex/Havoc-OS-20180801-rolex-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
                 description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Redmi 4A & Redmi 5A (Rolex/Riva)">https://forum.xda-developers.com/redmi-4a/development/rom-havoc-os-t3810294</XdaUrl>
             <ChangelogUrl
                 id="changelog"
                 title=""
