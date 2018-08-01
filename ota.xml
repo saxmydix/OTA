@@ -402,7 +402,68 @@
                 id="donation"
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
-        </hero2lte>    
+        </hero2lte>
+	    
+        <enchilada>
+            <Filename>Havoc-OS-20180801-enchilada-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/enchilada/Havoc-OS-20180801-enchilada-Official.zip/download/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>	    
+        </enchilada>  
+		
+	<cheeseburger>
+            <Filename>Havoc-OS-20180801-cheeseburger-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/cheeseburger/Havoc-OS-20180801-cheeseburger-Official.zip/download/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>	    
+        </cheeseburger>   
+
+	 <dumpling>
+            <Filename>Havoc-OS-20180801-dumpling-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/dumpling/Havoc-OS-20180801-dumpling-Official.zip/download/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>	    
+        </dumpling>      
+		
 	</Stable>
 </SlimOTA>
 
