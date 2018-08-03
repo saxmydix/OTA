@@ -544,6 +544,30 @@
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </potter>
 	    
+        <on7xelte>
+            <Filename>Havoc-OS-20180803-on7xelte-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/on7xelte/Havoc-OS-20180803-on7xelte-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for J7 Prime">https://forum.xda-developers.com/galaxy-j7/samsung-galaxy-j7-prime--j7-on-nxt-exynos7870/rom-havoc-os-t3824557</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </on7xelte>
+	    
 	</Stable>
 </SlimOTA>
 
