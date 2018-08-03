@@ -502,8 +502,28 @@
                 id="donation"
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
-        </oneplus2>	
-
+        </oneplus2>
+	    
+	<zenfone3>
+            <Filename>Havoc-OS-20180803-zenfone3-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/zenfone3/Havoc-OS-20180803-zenfone3-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </zenfone3>
+	    
 	</Stable>
 </SlimOTA>
 
