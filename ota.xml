@@ -567,6 +567,26 @@
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </on7xelte>
+        
+         <wayne>
+            <Filename>Havoc-OS-20180806-wayne-Official.zip</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/wayne/Havoc-OS-20180806-wayne-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/fatesay</PaypalUrl>
+        </wayne>
 	    
 	</Stable>
 </SlimOTA>
