@@ -588,8 +588,7 @@
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </wayne>
 	    
-	    
-        <ether>
+	<ether>
             <Filename>Havoc-OS-20180805-ether-Official.zip</Filename>
             <RomUrl
                 id="rom"
