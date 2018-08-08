@@ -285,11 +285,11 @@
         </sanders>
 
         <starlte>
-            <Filename>Havoc-OS-20180801-starlte-Official</Filename>
+            <Filename>Havoc-OS-20180808-starlte-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/starlte/Havoc-OS-20180801-starlte-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/starlte/Havoc-OS-20180808-starlte-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
@@ -305,11 +305,11 @@
         </starlte>
 		
         <star2lte>
-            <Filename>Havoc-OS-20180801-star2lte-Official</Filename>
+            <Filename>Havoc-OS-20180808-star2lte-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/star2lte/Havoc-OS-20180801-star2lte-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/star2lte/Havoc-OS-20180808-star2lte-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
