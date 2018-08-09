@@ -22,15 +22,19 @@
         </oneplus3>
 	
 	<mido>
-            <Filename>Havoc-OS-20180713-mido-Official</Filename>
+            <Filename>Havoc-OS-20180806-mido-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/mido/Havoc-OS-20180713-mido-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/mido/Havoc-OS-20180806-mido-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
                 description="">http://opengapps.org</GAppsUrl>
+	    <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Redmi Note 4">https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/rom-havoc-os-t3826221</XdaUrl>
             <ChangelogUrl
                 id="changelog"
                 title=""
