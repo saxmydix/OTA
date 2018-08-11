@@ -1,903 +1,378 @@
 ====================
-     07-31-2018
+     08-11-2018
+====================
+
+
+   * bionic/
+4eb10b0 libm: Update to FreeBSD libm r336523
+991b44a Set __bionic_asm_align to 16 for arm64
+1513a97 sysroot: kill arch-specific include dirs
+9616873 bionic: Remove relocation_packer
+7ccdf1a Add -ffp-contract=fast for libm
+06da276 Add Optimized sinf/cosf/sincosf
+1ce28ad libm: Add optimized powf
+0a5c793 libm: Add optimized log2f
+36d54ce libm: Add optimized logf
+a08e7ab libm: Add optimized expf2
+1bf17c0 libm: Add optimized expf
+cec6c99 vdso should be available in all namespaces
+559915f Fix bug with double unload on unsuccessful dlopen
+c2b45cc linker: Remove obsolete workaround
+52803b6 Switch to FreeBSD's actual sincos
+c539b80 Switch to FreeBSD catrigl.c for complex arc trig functions
+71cd4ff bionic: Update libm from upstream
+a83f51a Fix various ftw/nftw "shall fail"s from POSIX
+9b7daa0 libc: kryo: import ARM strlen from Apple C library
+7a35a06 aarch64/strncmp: Use lsr instead of mov+lsr
+caa1f69 aarch64: Improve strncmp for mutually misaligned inputs
+3bc0ad9 strcmp.S: Improve performance for misaligned strings
+f63948c memcmp.S: optimize for medium to large sizes
+36c7c74 Remove no_default_compiler_flags from crt*
+2154c74 bionic: strip libc and linker
+12c8215 libc: Suppress clang 7.0 warnings
+aa41698 libc: Build crtbegin with clang too
+e59d7fc bionic: do not pack relocation table
+22fb435 Enable 32-bit armv8 NEON for libm
+44f3112 kryo: Update routine from moto
+c761829 Use builtins for ceil/floor/rint/trunc on arm64
+61b9ae9 libc: add optimized ARM64 strrchr from newlib
+219fea7 Use builtins for fma/fmax/fmin/round on arm64.
+de7ee5f Find clang correctly
+d4dccae libc: Optimize ARM memcmp by using NEON.
+df93853 Remove an obsolete aarch64 hack.
+d8e1ce0 Optimized memcmp
+0e9218e Init Havoc...
+
+   * build/make/
+3d4b745 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+31d6b4f Enable GSS garbage collection
+d13658a Shorten build fingerprint
+3d2d2a4 Move ART default properties into system partition
+521203c core/Makefile: Shorten BUILD_DISPLAY_ID
+c3789de core/dex_preopt.mk: Don't build dex with debug info
+1749276 main.mk: DIsable dalvik vm lockpref
+49f6bac core/Makefile: Force 'release-keys'
+7bb828e core: disable fdo
+d1f7e0a core: config: Use host ijar if requested
+4232b12 dex2oat: disable multithreading for WSL
+a595551 Add detection for WSL
+7991047 Adapt ijar for WSL
+
+   * device/oneplus/oneplus3/
+7da45a2 Revert "Shady-fy"
+dadb111 op3: Update spectrum profiles
+
+   * frameworks/av/
+62afd07 audioflinger: Threads: increase max tracks per uid
+e7de61b Fix high battery drain after using flashlight
+d9d2abb av: Modified that logs do not include URLs
+ad6c3d5 Enable 32-bit armv8 NEON for aac/amrwb/h264 codecs
+7726750 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * frameworks/base/
+f734d80 base: Add api to force show led lights
+85a5334 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo-wip
+6d85318 EdgeGestures: Make it little faster
+4a4aa4a SystemUI: Update reading mode tile for new API
+bee37b9 Automatic translation import
+282344b fw/b lights: Allow black notification color
+7e2dc21 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+b9c1b16 Automatic translation import
+
+   * frameworks/native/
+b601762 surfaceflinger: Fix egl GL_OUT_OF_MEMORY and EGL_BAD_ALLOC bug
+60a77d7 sf: change SurfaceView alpha while opaque region compute
+53e5eab gui: null check in ISurfaceComposer.cpp
+4375a79 Don't use cutils/Atomic.h
+9a392f2 SF: Switch computeBounds to return FloatRect
+b0788e6 libs: binder: Replace NULL/0 with nullptr
+cda1a98 libs: gui: Replace NULL/0 with nullptr
+c9bbce7 libbinder: case in 'waiting for service' log
+744bde4 libbinder: auto-choose between binder/vndbinder
+e10a600 libbinder: Remove thread shutdown logic
+0f635c4 libbinder: remove unnecessary check
+81603c2 libs: vr: Fix new c++ error when using clang7
+d3116b4 Sync mLastQueuedCrop with mLastQueuedSlot
+dbd3d6a Ensure the reference profile directory is always created
+98a19e0 have patchoat take directories instead of filenames
+793ec80 binder: Fix incorrect print starved time of binder pool
+e9dd245 binder: Remove unused native binder impl of BnBatteryStats
+eb131e5 Use dex2oatd when available on debug builds
+84b893d vulkan: update Vulkan headers to 1.1.72
+a6a786d Fix Vulkan null_driver's EnumeratePhysicalDevices()
+5dc7e37 Fix monolithic, un-suffixed GLES driver search
+31695d6 vulkan: Allow AHB extension to get to the driver
+6b3b96c libvulkan: correctly expose VK_KHR_shared_presentable_image
+57e2f72 Enable VK_KHR_swapchain for instances
+20ed087 vkGetDeviceQueue2: add a NULL check
+1b53a7c stubhal: add EnumeratePhysicalDeviceGroups
+5ca07c3 libvulkan: Add VK_ANDROID_external_memory_android_hardware_buffer
+e1c5697 vulkan: Declare VK_ANDROID_external_memory_android_hardware_buffer
+2fbb920 vulkan: update Vulkan headers to 1.1.68
+0e6a199 Add VK1.1 entries to NDK libvulkan and fix a bug
+3ba9baa Properly implement stubhal's vkGetInstanceProcAddr()
+69aebfa Vulkan1.1: CreateInstance downgrades apiVersion for 1.0 ICDs
+ecf267e Additional changes to Vulkan 1.1 API updates
+a9220db Vulkan api update to 1.1
+bd74ee2 vulkan: Update Vulkan headers to 1.0.61
+3d33d4f vulkan: Update Vulkan headers to 1.0.60
+0b1886a DL policy extension for SchedulingPolicyService
+8dcdb23 surfaceflinger: fix static analyzer complaints
+46036ff surfaceflinger: fix fencing when composition mode switches
+61ee6f2 surfaceflinger: fix fencing when layers become invisible
+16a3e61 Input: improve touch response slightly
+f18f5a3 SF: Modify binder call before linkToDeath
+3c2efa6 Fix bugs regarding calculate dalvik-cache size
+28b8916 surfaceflinger: set a prop when initialization is complete
+7c54f7e native: touch response optimizations
+bceb0ff servicemanager: Restart keystore and gatekeeper after crash
+da3049f Init Havoc...
+
+   * frameworks/opt/telephony/
+e8af996 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * hardware/lineage/interfaces/
+9bcc1bd Update makefiles from anywhere.
+
+   * hardware/lineage/lineagehw/
+a027dee lineagehw: Check if files are readable when we read them
+
+   * lineage-sdk/
+b0af5a3 sdk: Rework reading mode API
+2657ba4 Automatic translation import
+fef5a3f sdk: Allow controllable brightness for non-RGB segmented battery LEDs
+bd7aefe sdk: Add minimal LineageSettingsService
+a4d1af5 Import preference class for custom hostname feature
+b01f4ac sdk: Make smarter low-power display mode choices
+
+   * manifest/
+eeee0a7 lineage: Remove no longer used commented repositories
+0fda6d5 manifest: android-8.1.0_r36 -> android-8.1.0_r43
+
+   * packages/apps/HavocSettings/
+6eb8d18 Moving events into OmniBrain
+
+   * packages/apps/LineageParts/
+784f7df LineageParts: Update reading mode toggle for new API
+8f8375a Automatic translation import
+1bdffbb LineageParts: Remove PrivacySettings
+07f5512 LineageParts: Allow brightness control for segmented LEDs
+
+   * packages/apps/PackageInstaller/
+57881f5 Add Roundness
+4369328 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * packages/apps/Settings/
+cee3652 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo-wip
+66ced6d Revert "Settings: add system event service [2/2]"
+
+   * packages/apps/WallpaperPicker/
+80c0af5 Automatic translation import
+
+   * packages/providers/MediaProvider/
+836a92d Automatic translation import
+
+   * packages/services/Telecomm/
+328fa87 Automatic translation import
+6b497d1 Use double vibration on call hang-up
+
+   * packages/services/Telephony/
+f273b4c Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * system/vold/
+be1ecc2 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * vendor/havoc/
+3c074e5 Update RPL
+5a22cfc Build OmniLib
+8de2fa0 Build OmniBrain
+831d9d8 backuptool_ab: Pick LineageOS properties from build.prop
+8fb1d5e backuptool: Resolve incompatible version grep syntax
+8d87481 lineage: Set perms on reading_mode sysfs
+
+====================
+     08-10-2018
 ====================
 
 
    * device/oneplus/oneplus3/
-6e638ab op3: init tweaks
+5790674 op3: increase audio bitrates for camcoder
+a9de66f op3: Copy qti_whitelist.xml to the proper target folder
+d2b17b5 op3: Update from OOS 5.0.4
+27c8535 Shady-fy
 
    * frameworks/base/
-d78305e base: fix changing doze settings
-cdc2d1a DUI: Grant SystemUI runtime microphone perms for Pulse
-6318e35 Bluetooth: catch exception when unlinkToDeath to avoid crash
-b328a0b Move BT state to OFF when BLE app count is zero
+3126c7d base: add zen mode off hook to prevent problems with ringer mode
+6ee7315 Fix Unlink notification volume
+e195140 Clean up back animation view for edge gesture
+81a7655 QS: Use proper color attr for enabled tile
+0ac5c1a base: HeadsUp snooze: reset snoozed packages on settings change
+0e11382 Remove call to expand QS panel while pressing the Airplane QS tile
+56e9017 preference: Add icon to icon_frame and save space
+fae297d Add blur personalization for volume panel [1/2]
+721dab0 SystemUI: Add tile for enable/disable HW keys
+2e5d4a3 Lock clock improvements
+5c97723 [1/2] Add sammy accent clock and a variant
+9a2fe93 Fix recents style crash
+da5078d Add back panel settings
 
    * packages/apps/HavocSettings/
-f8e1c26 Add TimeInState and DozeSettings
-332556c Add RestartUI Dialog when changing Qs Style
+0782e27 Fix icon tint
+c29f080 Move do not disturb switch to Havoc Settings
+cd63b9f Remove Fingerprint gesture preference if not supported by device
+18b68e7 Add blur personalization for volume panel [2/2]
+cb594da Add sammy accent clock and a variant [2/2]
+cd57f57 Maintainers section improvements
+4f55f2d Fix Recents styles crash
+69d7b71 Fix missing buttons from brightness preference
+7ae20ec Use secure settings for disable hw keys
+98b9642 Implement animations for back edge gestures [2/2]
+df4bc20 Revert "Cleanup volume panel tweaks"
+14c3bcc Add Team members
+e890f66 Update maintainers
+30f3bbe allow hiding lockscreen shortcuts on secure lockscreen [2/2]
+463fc90 Implement OP like navigation gestures [2/2]
+641589b Screenshot delay [2/2]
+
+   * packages/apps/Settings/
+09e51a2 Revert "Settings - Lockscreen shortcuts improvements [2/2]"
+7ace6fb Settings: fix notification volume linking
+b7272b4 Settings: unlink notification volume is back
+61cef66 Revert "Settings: Add switch for linked ring and media notification volumes"
+
+   * vendor/oneplus/
+2647963 op3: Update blobs from OOS 5.0.4
 
 ====================
-     07-30-2018
+     08-09-2018
 ====================
 
+
+   * build/make/
+f96a0c2 Merge tag 'android-8.1.0_r43' into HEAD
+
+   * external/e2fsprogs/
+81fe13e Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * frameworks/av/
+f1f657b Merge tag 'android-8.1.0_r43' into HEAD
 
    * frameworks/base/
-1f91f88 Volume Panel fixes
-bb464f8 UI fixes
-57c7c22 Change data tile drawable
-4f91c05 Implement QS Tiles Alpha and Circle changes
-d6ae50f Volume Panel misc modifications + headerColor fixes
-cd5942c Rearrange QSPanel UI
-218ae58 QSPanel Improvements
-d28b009 QSPanel : General fixes
-6b54f3c HWKeys: Disable haptic on keyguard
-437db08 Proper supplementary service notification handling (1/5).
-a21f495 Themes: fix vpn status dialog
-30ddff8 Revert "base: Add three-fingers-swipe to screenshot [1/2]"
+b78e9ae SystemUI: Update reading mode tile for new API
 
-   * kernel/oneplus/msm8996/
-6f2223a increased rcu value for better power save
-b2671e1 Avoid LoadAvg
-7856df6 bam_dmux: attempt reduce wakelock
-27d014c mm: Tune process reclaim
-b1d3fbd arm64: enable more compressed Image formats
-e5f2d0e ASoC: core: Increase max name size
-b4c8154 cpufreq: Add Chill cpu gov, squashed commit... cb2b873 chill: Allow any number >= 1 for boost count 4749892 chill: Reset boost count on policy->min b127052 chill: Decrease boost count alongside frequency 10b0d0c chill: Simplify boost increment logic aae1918 chill: I'm secretly retarded 4d5f0f9 chill: Reset boost count at max regardless of whether we've boosted c9a14a2 cpufreq: chill: Use native display_state instead of PowerSuspend 0231351 cpufreq: chill: Version 2.0 6f1be93 cpufreq: chill: Impliment down_threshold_suspended 41bfe3c cpufreq: chill: Replace sleep_depth with true load ignorance 6f5b528 cpufreq: chill: Guard against 0 sleep depth and optimize defaults 5933b1a cpufreq: chill: Go back to using Conservative's tunables 08522e9 cpufreq: chill: use GOV_CHILL macro 1f4c7a7 cpufreq: chill: Don't check for target frequency when boosting 7097ece cpufreq: chill: Major cleanup, move changes from governor.h to chill.h 47c5fa5 cpufreq: chill: Add boost option 3a3f782 cpufreq: chill: Add verion macros 1e858fb cpufreq: Add Chill cpu gov
-b134ed6 Apply CFLAGS, -Os to decompress.o to improve decompress performance during boot-up process (flar2 )
-8a8d32e tweaked thermals
-30ded41 Makefile: Optimize
-b0b407f disable loading f2fs module on PAGE_SIZE > 4KB
-
-   * packages/apps/HavocSettings/
-44095fe Add X00TD maintainer
-c7165bf Add Kuntao maintainer
-bb12d83 Add GSI maintainer
-af02541 Cleanup volume panel tweaks
-
-====================
-     07-29-2018
-====================
-
-
-   * kernel/oneplus/msm8996/
-f190178 bump version
-4012574 ANDROID: Kbuild, LLVMLinux: allow overriding clang target triple
-35b65a7 msm_adreno_tz: add adrenoboost parameter
-3a4d093 selinux: just shut up
-4f62fd9 msm: performance: prevent the driver from handling userspace min freq cpu boost hints.
-cf44ad1 msm: performance: prevent userspace hints to decrease max cpu freq
-fa75787 reduce default timerslack
-51bdbe4 PM / sleep: don't suspend parent when async child suspend_{noirq, late} fails
-23cee76 Merge tag 'v3.18.117' into 8.1
-e5fe388 input: synaptics_s3320: Create custom procfs nodes for gestures
-57cb941 input: ft5x06_ts: add gesture feature support
-60d4dc7 usb: otg: reduce the wakelock timeout to 1 second. No idea why this wakelock persists sometimes (happens on all configurations, regardless of 100% stock device or not) so at least mitigate this a little
-97bd8eb Decrease time to enter sleep [Pafcholini]
-fa261b2 proc: much faster /proc/vmstat
-7512b75 workqueue: Schedule workers on CPU0 or CPU0/CPU1 by default
-bcfcdd0 display: add a simple api to query the display state (on/off) at any point in time
-06cc5df cpufreq: interactive: add powersave bias tunable
-a926fce fix redefined method errors
-de1cfd2 Readahead: Optimize divide/multiply by power of 2 using L/R shift (thx ramgear)
-ec774bb tcp_output: set initial TCP window size to 64K (speed improvement)
-9c7dbae Optimized Console FrameBuffer for upto 70% increase in Performance
-8d538e7 dm-crypt: increase threads
-3220ea2 ARM: dts: msm: Disable GPU wake up on touch event
-d3d974d power: Adjust Thermal Limits
-e487492 input: synaptics: s1302: set defaults for back recent buttons
-
-   * packages/apps/DeskClock/
-0507261 DeskClock : update alarm if it is handled in min framework
-
-   * packages/apps/HavocSettings/
-6b72843 Add toggle to switch to Oreo QS tiles
-
-   * packages/apps/Jelly/
-5cfd61b Jelly: Show a Snackbar when removing an HistoryItem
-
-====================
-     07-28-2018
-====================
-
-
-   * kernel/leeco/msm8996/
-411e856 BlackScreen 5.3
-f4a6380 zl1/x2: Update defconfigs
-4a8ed81 Defconfig: Enable EXFAT
-71daca7 fs: Import EXFAT
-fc34415 Remove gcc-wrapper
-7d7b47a node.c: init head
-b37a072 maple-iosched: convert to use fb_notifier
-c5f704e Makefile, arm64: O3 and optimize for CPU
-b790526 namespace.c: Default to NOATIME
-d80e899 CHROMIUM: selinux: Do not log permissive denials
-88f8d03 android: silence some logging
-5a1794a soc: qcom: glink: Fix memory leak in driver probe
-0f4db7e soc: qcom: watchdog_v2: Fix memory leaks when memory_dump_v2 isn't built
-3d713e8 crypto: Make CRYPTO_DEV_QCE depend on CRYPTO_DEV_QCRYPTO being disabled
-bc8ea76 net/wireguard: add wireguard importer
-9ac0ef8 vm tweaks
-71845e4 zl1/x2: disable CONFIG_LOCALVERSION_AUTO
-12561d0 msm: qpnp-haptic: set up sysfs interface for common cmhw implementation
-168e567 qpnp-haptic: Add sysfs interface to control intensity
-fe24abc ksm: use deferred timer
-02d9a8c sound_control: fix merge error
-7d48e6b ASoC: wcd9335: command line option to enable compander
-1c777ee ASoC: wcd9335: add analog headphone gain
-90025c0 ASoC: wcd9335: Sound control: allow further reduction of digital gain
-5c9aee7 ASoC: wcd9335: Sound control
-036a6b1 kernel: ksysfs.c : Removed unused variable
-1a85a92 Add Arch Power and Gentle Fair Sleepers Interface
-ce7800f sched: Add SysInterface for GENTLE_FAIR_SLEEPERS
-c7b532d yankactive : remove depreciated strict_strtoul()
-1d61f9c cpufreq: Add Yankactive Governor
-9cac5a9 Introduce voltage control
-d34c88f Makefile: Wrap CC in ccache This will drastically drop recompilations (5-6 minutes down to 45 seconds on my server)
-d9d43c4 mmc: toggleable software crc
-643f31c mdss_fb: add backlight dimmer option
-014e40d sound_control: fix merge error
-65706b6 ASoC: wcd9335: Sound control
-694ef86 block: [SQUASHED] [Introduded for 3.18.y] Add Maple I/O Scheduler
-7228528 Add despair governor
-0041cb6 blu_active: sync up with android-4.4 linux, bring back fastlane (revamped)
-d9d552b drivers: misc: implement usb fast charge mode
-e0fcf5b Add Alucard and Nightmare Governors
-55debc1 Add Elementalx and Smartmax Governors
-0482183 Add ConservativeX Governor
-2dcd43c vm tuning
-3cb1b5b update Zen iosched for linux 3.18
-082c6b2 tripndroid & sioplus iosched update for linux 3.18
-2859946 add sioplus and tripndroid sched
-c0c1268 add Bioshock gov
-fc8c444 add Lionheart gov
-54bcb99 Add latest impulse governor
-208ed23 add Wheatley Gov
-3b24938 blue active
-de17f4b cpufreq: Gov: Introduce cpufreq_nebula: Based on Interactive ported from msm-4.4
-9f49e84 zen-iosched: change fifo_batch to 16
-1052e64 block: add zen scheduler
-6c838f7 cpufreq: cache tunables for ondemand and conservative governors
-41ce0ad SIO: update for linux 3.18
-1fdbde7 FIOPS: update for linux 3.18
-aac3fc7 Add SIO and FIOPS i/o schedulers
-d22ab62 msm_performance: add toggle for on/off input boost
-4a1453e cfq-iosched: Fix the setting of IOPS mode on SSDs
-5e2fb31 block: Make CFQ default to IOPS mode on SSDs
-bda606e sched/deadline: Split cpudl_set() into cpudl_set() and cpudl_clear()
-719ce80 sched/deadline: Make CPU heap faster avoiding real swaps on heapify
-42a614a sched/deadline: Refactor CPU heap code
-ff2f6b4 block: deadline: Optimize for non-rotational
-b42c8c7 cpufreq: cpu-boost: export input_boost_enable to userspace
-a014a08b Add lionfish and darkness Governors
-1879c9b msm: mdss: kcal: remove invert sysfs
-789ba9b msm: mdss: kcal: merge upstream changes on thulium port
-e4ec2eb mdss mdp: kcal: Using the MDP 1_7 userspace structs to inject configurations of kcal to the pp_cache configs
-3ca6874 msm: mdss: kcal: Add KCAL support for post processing control [v2]
-aa557f2 x2 zl1: Disable debugging
-87b9cff cpu_wake_boost.c: Lower duration
-b95db7c drivers: cpu-boost: optimize policy update loop on input cpufreq boost
-5e20b90 cpufreq: cpu-boost: don't boost the gold cluster unecessarily
-4b6eec9 cpufreq: cpu-boost: don't boost if input_boost_ms is <= 0
-c90074f cpufreq: cpu-boost: don't boost over user set max freq
-bf2f907 cpufreq: cpu-boost: set interval between consecutive boosts to be at least the duration of the boost instead of a bigger value
-2bcbb08 cpufreq: Introduce CPU wake boost driver
-26ff324 qcom-cpufreq: Boost all online CPUs when exiting suspend
-ee9d6bb cpuidle: lpm-levels: Remove sleep_disabled switch
-6c885cf cpu-boost: Boost priority of notifier_block
-636aeae pwm: qpnp: Fix qcom HW known issue
-e1e4da1 tick: don't update idle time if cpu offline
-054f08b ion: avoid allocate high order of pages in system heap pools
-8dc58e9 mm: skip swap readahead when process is exiting
-5db4304 sched: LOAD_FREQ (4*HZ+61) avoids loadavg Moire
-8bb64a0 devfreq: Don't force compilation of userspace governor
-816a302 Silences WLAN, PCIe, and CPU suspend state kernel messages
-5417846 sched: Disable gentle fair sleepers
-881c2d8 drivers: video: mdss: Fix direct references to HZ
-c81d638 drivers: ipa: Fix direct references to HZ
-83f7d1b drivers: platform: gsi: Fix direct references to HZ
-7fc6adc drivers: hwmon: Fix direct references to HZ
-9f65716 mm: Decrease swappiness to 8
-1762f59 trace: add CONFIG_DISABLE_TRACE_PRINTK option
-fa23063 dts: Set 133MHz as gpu idle freq
-3bbc182 Disable Add Random
-977a9b9 random: sprinkle e/f/prandom in places that deplete entropy often
-032444c random.h: declare erandom function
-00411b5 random32: use e/frandom for reseeding, and a merge fixup
-85937c7 char: frandom: initial commit v1.1
-938f6bb random: backport from Linux 4.2
-7290dc3 dts: Reduce msm-core polling rate to 100ms
-d625282 zl1/x2: Enable IP_NF_TARGET_TTL
-e33de6b defconfig: implement RCU boost and NO-CB CPUs mechanisms
-539f216 rcu: Associate quiescent-state reports with grace period
-31f70ac rcu: Yet another fix for preemption and CPU hotplug
-421b096 rcu: Add diagnostics to grace-period cleanup
-4f25714 rcu: Handle outgoing CPUs on exit from idle loop
-f54100a smpboot: Add common code for notification from dying CPU
-e70fa5e cpu: Make CPU-offline idle-loop transition point more precise
-291b409 rcu: Eliminate ->onoff_mutex from rcu_node structure
-c8506fe rcu: Process offlining and onlining only at grace-period start
-efd3203 rcu: Move rcu_report_unblock_qs_rnp() to common code
-5fc51ce rcu: Rework preemptible expedited bitmask handling
-b35848f rcu: Remove event tracing from rcu_cpu_notify(), used by offline CPUs
-f3c1283 rcu: Detect stalls caused by failure to propagate up rcu_node tree
-a884026 rcu: Eliminate empty HOTPLUG_CPU ifdef
-f6e7c55 rcu: Simplify sync_rcu_preempt_exp_init()
-a776a93 rcu: Put all orphan-callback-related code under same comment
-b950d89 rcu: Consolidate offline-CPU callback initialization
-22b8463 rcu: Remove redundant check of cpu_online()
-bfa12bd rcu: Get rcu_sched_force_quiescent_state() where it belongs
-ca25d85 rcu: Improve diagnostics for blocked critical sections in irq
-9f6b61d rcu: Move early-boot callbacks to no-CBs lists for no-CBs CPUs
-e02d916 rcu: Wire ->rda pointers at compile time
-93a348f rcu: Prevent early-boot RCU callbacks from splatting
-ed3f3f4 rcu: Tighten up affinity and check for sysidle
-38a7037 rcu: Remove fastpath from __rcu_process_callbacks()
-07d6383 rcu: Remove unnecessary condition check in rcu_qsctr_help()
-59a82b1 rcu: Fixes to NO_HZ_FULL sysidle accounting
-b91cc0e rcutorture: Make consistent use of variables
-2013c1a rcu: Add Kconfig option to expedite grace periods during boot
-b82b5a8 rcu: Update from rcu_expedited variable to rcu_gp_is_expedited()
-2fb1b61 rcu: Add rcu_expedite_gp() and rcu_unexpedite_gp() to rcutorture
-4a907cd rcu: Provide rcu_expedite_gp() and rcu_unexpedite_gp()
-b191ed1 rcu: Fix a couple of typos in rcu_all_qs() comment header
-351ce47 rcu: Avoid clobbering early boot callbacks
-3123d36 rcu: Refine diagnostics for lacking kthread for no-CBs callbacks
-0acbd26 rcu: Abstract default callback-list initialization from init_callback_list()
-c6bfcb0 rcu_tree: Avoid touching rnp->completed when a new GP is started
-f999583 rcu: Consolidate rcu_synchronize and wakeme_after_rcu()
-e0d0837 rcu: Clear need_qs flag to prevent splat
-1977e47 rcu: Initialize tiny RCU stall-warning timeouts at boot
-686731c rcu: Fix RCU CPU stall detection in tiny implementation
-c7cd895 rcu: Add GP-kthread-starvation checks to CPU stall warnings
-da5383d rcu: Make cond_resched_rcu_qs() apply to normal RCU flavors
-516e921 rcu: Optionally run grace-period kthreads at real-time priority
-9c6f9cf rcutorture: Add more diagnostics in rcu_barrier() test failure case
-8079c54 rcutorture: Check from beginning to end of grace period
-57a087f rcu: Provide rcu_batches_completed_sched() for TINY_RCU
-d3893ee rcu: Remove redundant rcu_batches_completed() declaration
-f2fd406 rcutorture: Drop rcu_torture_completed() and friends
-84bdb42 rcutorture: Use unsigned for Reader Batch computations
-e24606e rcu: Make _batches_completed() functions return unsigned long
-c23460a rcu: Handle gpnum/completed wrap while dyntick idle
-9ae43f8 rcu: Improve diagnostics for spurious RCU CPU stall warnings
-7068ef7 rcu: Make RCU_CPU_STALL_INFO include number of fqs attempts
-212a401 rcu: Expand SRCU ->completed to 64 bits
-0ac83b6 rcu: Remove redundant callback-list initialization
-eda1832 rcu: Don't scan root rcu_node structure for stalled tasks
-c2e9e13 rcu: Revert "Allow post-unlock reference for rt_mutex" to avoid priority-inversion
-6c10709 rcu: Note quiescent state when CPU goes offline
-e59b4f5b8 rcu: Don't bother affinitying rcub kthreads away from offline CPUs
-b5bd798 rcu: Don't initiate RCU priority boosting on root rcu_node
-bbd0c16 rcu: Don't spawn rcub kthreads on root rcu_node structure
-a8a7fa5 rcu: Make use of rcu_preempt_has_tasks()
-8d86573 rcu: Shorten irq-disable region in rcu_cleanup_dead_cpu()
-f9159a8 rcu: Don't migrate blocked tasks even if all corresponding CPUs offline
-6ed5580 rcu: Make rcu_read_unlock_special() propagate ->qsmaskinit bit clearing
-971b0e0 rcu: Abstract rcu_cleanup_dead_rnp() from rcu_cleanup_dead_cpu()
-0411abf rcu: Rename "empty" to "empty_norm" in preparation for boost rework
-c5bcc8f rcu: Protect rcu_boost() lockless accesses with ACCESS_ONCE()
-73a606a rcu: Remove "select IRQ_WORK" from config TREE_RCU
-e9db8a8 rcu: Fix rcu_barrier() race that could result in too-short wait
-68ab86b rcu: Fix invoke_rcu_callbacks() comment
-d362263 rcutorture: Fix rcu_torture_cbflood() memory leak
-3b85605 rcu: Use DEFINE_PER_CPU_SHARED_ALIGNED for rcu_data
-9620bb0 rcu: Fix for rcuo online-time-creation reorganization bug
-94340a8 rcu: Unify boost and kthread priorities
-972b7f4 rcu: Move RCU_BOOST variable declarations, eliminating #ifdef
-dd16372 rcu: Avoid IPIing idle CPUs from synchronize_sched_expedited()
-1f60bff msm: kgsl: Report correct GPU frequency in sysfs
-637b870 Makefile: Support CRC and Crypto hardware instructions
-353f72d Makefile: Optimize for Cortex-A57
-e1857ce Makefile: opt-out from 835769/843419 errata fixes
-8f4193f Revert "Makefile: Enable ld fix for cortex-a53 errata 843419"
-b661939 defconfig: show detailed CPU frequency translation
-60d5355 ASoC: core: Don't assign an out-of-bounds address to rtd_aux
-d6cfbfc power: msm-core: Fix mutex not getting unlocked in error path
-dbfbf72 cpuidle: don't disable cpuidle when entering suspend
-b27f603 arch: Unbreak mrproper/clean
-fb034f0 arm64: Fix the ARM userspace build
-e8a8bfd crypto: xts - fix compile errors
-a541b70 crypto: xts - consolidate sanity check for keys
-0b76235 crypto: arm64/aes-blk - honour iv_out requirement in CBC and CTR modes
-d4a8899 crypto: arm64/sha2 - add generated .S files to .gitignore
-f7d3048 crypto: arm64/sha2 - integrate OpenSSL implementations of SHA256/SHA512
-e381fcc crypto: arm64/sha1-ce - prevent asm code finalization in final() path
-b34293c crypto: arm64/sha1-ce - move SHA-1 ARMv8 implementation to base layer
-c54f83a crypto: sha512-generic - move to generic glue implementation
-77a8e66 crypto: sha256-generic - move to generic glue implementation
-8d06257 crypto: sha1-generic - move to generic glue implementation
-230a984 crypto: sha512 - implement base layer for SHA-512
-86c5941 crypto: sha256 - implement base layer for SHA-256
-aff244e crypto: sha1 - implement base layer for SHA-1
-982eb35 crypto: arm64/sha2-ce - prevent asm code finalization in final() path
-ab5208b crypto: arm64/sha1-ce - prevent asm code finalization in final() path
-47ddd8c crypto: arm64/sha2-ce - move SHA-224/256 ARMv8 implementation to base layer
-7c61159 crypto: arm64/sha1-ce - move SHA-1 ARMv8 implementation to base layer
-4cd20a8 lib/memcopy: use glibc version
-b7794b9 lib/string: use glibc version
-1305c1b Optimized ARM RWSEM algorithm
-6659f34 arm/arm64: crypto: boost performance
-97ae96b mm: zpool: fix discard-const-qualifier warning
-e4f3297 mm/zswap: fix potential deadlock in zswap_frontswap_store()
-c447142 mm: zswap: change default compressor and zpool type
-7e11f02 mm/zswap: use workqueue to destroy pool
-3d9ba91 mm/zswap: provide unique zpool name
-cb58b07 mm/zswap: change incorrect strncmp use to strcmp
-ffb583b zswap: use charp for zswap param strings
-b6bc3c4 zswap: change zpool/compressor at runtime
-0c116fe zswap: dynamic pool creation
-40d1b4f zram: make sure we use lz4 and appropriate compression streams number
-20ee437 zswap: runtime enable/disable
-4df38ce PM / devfreq: Restart previous governor if new governor fails to start
-86e3fb8 arm/dts: msm8996: Mark IRQ 168 as summary IRQ
-6db3664 ANDROID: ARM64: smp: disable preempt in backtracing across all cores
-f92ded9 arch/arm64: skip randomization within stack
-4139c1b arm64: make default ARM64_DMA_IOMMU_ALIGNMENT as 9
-324f630 arm64: eliminate the .eh_frame sections from vmlinux and kernel modules
-ef9e790 usb: misc: legousbtower: Fix memory leak
-25148fd UPSTREAM: lz4: fix wrong compress buffer size for 64-bits
-37719f1 UPSTREAM: zram/zcomp: do not zero out zcomp private pages
-7624304 UPSTREAM: zram: pass gfp from zcomp frontend to backend
-0899542 lowmemorykiller: account for unevictable pages
-b59b740 tcp_output: set initial TCP window size to 64K (speed improvement)
-699306e mm: remove gup_flags FOLL_WRITE games from __get_user_pages()
-4d2010b scsi: ufs: Fix crashes caused by uninitialized completion usage
-e1fb73a tick/nohz: Optimize nohz idle enter
-98d7e92f mm: migrate dirty page without clear_page_dirty_for_io etc
-bc59c2e Makefile: Silence x.509 warning
-099f1bf net: wireless: remove WARN_ON since it clutter kmsg logs
-89c3e9b BACKPORT: [UPSTREAM] ext2: convert to mbcache2
-170bb19 BACKPORT: [UPSTREAM] ext4: convert to mbcache2
-157047a BACKPORT: [UPSTREAM] mbcache2: reimplement mbcache
-3830eae ARM: optimize memset_io()/memcpy_fromio()/memcpy_toio()
-b2ad333 int_sqrt: Improve 3x faster integer sqrt.
-1a539fb int_sqrt.c: Correction square root algo with naming
-41c5701 llist: defining relaxed version of llist_empty
-23c24c2 hrtimer: enhance power efficiency
-cbfef43 thread_info: enhance power efficiency
-2772cf4 arm64: processor.h: remove redundant macros
-cbe11ee ARM64: defining macros to optimize power usage
-c3d70cb arm64: asm: relaxed.h: defined relaxed.h
-07c53ef arm: asm: relaxed.h: defined relaxed.h
-4897be6 asm-generic: processor.h: remove redundant macros
-c0bdac6 asm-generic: processor.h: adding new header file
-fab9c5a asm-generic: relaxed.h: defined relaxed.h
-318b722 arm64: atomic.h: defining relaxed atomic_read
-9d6c55c asm-generic: atomic.h: relaxed atomic_read
-f557391 block: fix blk_stack_limits() regression due to lcm() change
-76aee1e sched/completion: Add lock-free checking of the blocking case
-f76db3e cpufreq: suspend cpufreq governors on shutdown
-e0adc36 arm64: strcmp: align to 64B cache line
-5a37b72 crypto: use -O3
-da20a6d cuse: fix memory leak
-dfd8f77 AIO: Don't plug the I/O queue in do_io_submit()
-12486a3 blk-mq: update hardware and software queues for sleeping alloc
-f9c8d93 shmem: fix shm fallocate() list corruption
-748865d mm: slub: Default slub_max_order to 0
-21d46a3 fs: Workaround the compiler's bad optimization
-e75ec60 mmc: queue: move to a SCHED_FIFO thread
-ba046b9 binfmt_elf: use get_random_int() to fix entropy depleting
-3c784f8 workqueue: set the default permissions to write mode
-7a5e5b1 drivers: mdss: queue work on system_power_efficient_wq
-c3b06cc drivers: mdss: queue input handler functions to a high prio wq
-0daa713 qcom: mpm: Use interruptible wait to reduce load avg
-8cadcd9 cfq-iosched: Fix the setting of IOPS mode on SSDs
-6a29da8 block: Make CFQ default to IOPS mode on SSDs
-b12b96a arm64: crypto: Improve target optimization flags
-622951e writeback: increase bdi_min_ratio to 5 in light of the latest writeback commit.
-782b554 qcom: msm-core: queue work on system_power_efficient_wq
-521a6c0 drivers: power: bcl: queue work on system_power_efficient_wq
-28c8f21 arm64: atomic: add missing macros
-2eb793b qcom: msm-core: uninterruptible wait - you can kiss my arse goodbye
-2f04fb7 arm64: lib: improve copy_page to deal with 128 bytes at a time
-2c83c1d printk: Ignore LOG_USER messages in kmsg
-b1e829c arm64: lib: memory utilities optimization
-00fa50a proc: much faster /proc/vmstat
-330bd99 zl1/x2: disable wlan rx wakelock
-abbd0af mmc: core: disable spi crc check
-0f8baee adreno_tz: Push 27MHz frequency step to be used a bit more
-aaaf86e Enable Arch Power & Capacity
-60ad34b proc: Set androidboot.verifiedbootstate=green
-3ef2ff3 x2: Add focus fix module parameter
-0062354 misc: queue work of some msm drivers on system_power_efficient_wq
-8c30d44 msm: msm_bus: Don't enable QoS clocks when none are present
-f664c53 msm_serial_hs:  make the Bluetooth tty thread RT
-682306c serial: msm_serial_hs: optimize total tty port support
-d5c8fe0 Make msm_serial_hs RT to improve bluetooth performance
-0028688 tty: add tty_port_set_policy function
-ea262c4 tty: move tty_port workqueue to be a kthread
-9f523a0 usb: otg: reduce the wakelock timeout to 1 second. No idea why this wakelock persists sometimes (happens on all configurations, regardless of 100% stock device or not) so at least mitigate this a little
-531a063 kernel: Restrict unbound kthreads to little CPU cluster
-f18d60d qcacld: Fix compilation with CC_OPTIMIZE_FOR_SIZE disabled
-1e9438e mmu.c: Fix ERROR_ON_MISMATCH
-e252bb5 arm64: topology: fix cpu power calculation
-d369d87 cpuidle: Don't enable all governors by default
-7c6c7b4 misc: Fix uninitilized variables
-0d9ed0a drivers: iommu, leds, input, clk, devfreq: fix warnings
-25368e1 ASoC: wcd9335: Initialize variables before use
-6f72daf media: vidc: change default return vaule to 0
-22a2709 ANDROID: clean up uninitilized variable
-0e60292 ANDROID: fix uninitilized variable
-2e3083f UPSTREAM: kbuild: disable clang's default use of -fmerge-all-constants
-c96ee5a Readahead: Optimize divide/multiply by power of 2 using L/R shift - Fix
-b810dd3 Readahead: Optimize divide/multiply by power of 2 using L/R shift
-2b55fb1 msm: qpnp-haptic: Process haptics asynchronously
-cfda60f x2 z1: Enable RCU_NOCB
-5dc584f gpu: devfreq: adrenoboost: correct leveling errors
-dcba312 msm adreno: adrenoboost v2.1: adrenoboost lvl 3 settings cut low freq bump
-6b03aac2 gpu: devfreq: adrenoboost: adding conservative governor v2
-ad70a33 gpu: devfreq: adrenoboost: adding conservative governor
-2878cd0 adreno_idler: fix typos :)
-32bf5e8 adreno_idler: fix-up some comments
-831ecfa adreno_idler: fix-up type definitions
-ce1679f adreno_idler: remove frequency bump
-b88c944 adreno_idler: switch to count based instead of time based
-32fb899 Introduce Adreno idler for devfreq-based Adreno devices
-cc75664 adrenoboost: finetuning algorithm - scale it a bit down
-c0816e9 msm_adreno_tz: add adrenoboost parameter
-b166d2b Treewide: Fix warnings
-04dfe2d boeffla_wl_blocker: Block default wakelocks we had before
-344bae9 wakeup: enable Boeffla wl killer by default
-fc6a803 defconfig: enable boeffla wakelock blocker
-58ceb24 boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
-4207366 boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
-269b105 boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
-2e05154 msm: thermal: Add sysfs nodes to control parameters
-ced3fb5 qcacld-2.0: Fix memory leak issue
-529d613 ARM: dts: msm: Rework and unify msm-thermal setup
-cbc17c6 power: Adapt fingerprintd thaw hack to universal
-033d4fe kernel/power/process: adapt thaw fingerprint hack to Oreo Name changed, fingerprint/fingerprintd variants didn't work. Signed-off-by: YaroST12 <yaro330@gmail.com>
-50e3c46 power: Make fingerprintd thaw hack more efficient
-893f6af power: Add back OnePlus fingerprintd() speed hack
-b3318b1 PM: devfreq: Always reflect a change of polling interval
-5ea47fe PM: devfreq: Use high priority workqueue
-48d7549 PM / devfreq: Fix typo that caused an infinite loop
-0d59062 qcom-cpufreq: Use cpufreq_table_validate_and_show to fill freq_table
-b14228a drivers:cpufreq:qcom-cpufreq: Initialise all ints
-832d461 cpufreq: interactive: remove hispeed_freq init restriction
-323190a cpufreq_interactive: remove boost functionality
-8dc2d9e cpufreq: interactive: Remove the jump_to_max hack
-a74bbd3 drivers: cpufreq_interactive: handle error for module load fail
-a91db80 drivers: cpufreq: checks to avoid kernel crash in cpufreq_interactive
-cc9cfb3 cpufreq: interactive: fix to come out of hysteresis mode
-02408d9 CHROMIUM: cpufreq: interactive: calculate load before freq change The update to cpu load for cpufreq rate changes was happening after the rate change instead of before. This switches it to update the cpu load before the cpufreq rate change so the old frequency is used for calculating the speed adjusted cpu load. The old frequency was used for that active time, so it should be used for calculating the speed adjusted cpu load.
-c97ab54 gt9xx: fix slow touchscreen wakeup We don't need this complicated system. It works fine even when simplified. This speeds up screen and touchscreen wakeup when woken up by fingerprint scaner, power button and etc... Signed-off-by: YaroST12 <yaro330@gmail.com>
-82f1f8a gt9xx: remove usage of init_done Slows down touchscreen wakeup. Signed-off-by: YaroST12 <yaro330@gmail.com>
-d5cbe16 input: touchscreen: call it on device_init
-d6037c3 input: touchscreen: Clean code for i2c_read and i2c_write
-e8fdd8b input: touchscreen: modify report event according to MT protocol B
-bfb2ce7 input: touchscreen: release all touches before suspend
-57155a9 gt9xx: remove it from branch
-ac5bf8c Decrease time to enter sleep [Pafcholini]
-44cdbce sched/fair: Reduce latency for better responsiveness
-02f5574 sched/fair: Reduce latency
-c9e3394 arm64: Add NOHZ
-e01e032 cpufreq_interactive: Allow hispeed_freq to work with prediction
-5908065 interactive: avoid calling usecs_to_jiffies() repeatedly
-305c195 msm: clock-osm: Use CLKFLAG_NO_RATE_CACHE for pwrcl and perfcl clk Clusters can have frequency change requests ignored when they come online without having this flag set. This can result in clusters running at their default frequency instead of the frequency chosen by the CPU governor.
-084aa95 nohz: fix idle and iowait stats discrepancy
-3548ab5 tick: Don't clear idle and iowait sums on CPU down
-2dc5be0 kgsl: convert some workqueues to use kthreads
-4331e74 kgsl: Increase priority of RT thread
-df844b0 msm: kgsl: Map GPU QTimer through GPU IOMMU
-a81bf8a mdss: Update RT priority
-07498e8 mdss: rotator: Use FIFO kthread for rotator work
-12d4138 Revert "Revert "rcu: Make RCU_FAST_NO_HZ take advantage of numbered callbacks""
-7ec1d19 clk: msm: clock-cpu-8996: Use CLKFLAG_NO_RATE_CACHE for perfcl_hf_mux
-2895605 qcom-cpufreq: Use CLKFLAG_NO_RATE_CACHE
-25f2800 mdss_fb.c: Fix compilation problems
-36482f7 PM / devfreq: Remove null termination in boost_devices
-e1d6fba PM / devfreq: Don't boost 624000.ufshc on wake
-fc9bf5c PM / devfreq: Reduce wake boost duration to 5000 ms
-751bcba PM / devfreq: Boost "624000.ufshc" and "soc:qcom,cpubw" on screen wake
-6f80fb2 PM / devfreq: Add an interface to boost devices when the screen is woken
-2987076 power: msm-core: Compile out temperature polling
-63c3e9b power: msm-core: Add missing NULL pointer check in msm_core_ioctl()
-e69affb msm: mdss: Always set non-zero brightness on unblank
-8bc5c28 ARM: dts: msm8996: Remove redundant CPU bandwidth devfreq devices
-08bdb39 drivers/gpu/msm/Makefile: Bring in some flags
-e390928 Strict aliasing: Fix more errors
-37b319d StrictAliasing: Disable On BFS
-e4696b4 Further Refined Strict Aliasing To Optimize Many More Objects
-8795f12 Initial Commit For Strict Aliasing Will go through later and disable on a per object basis rather than blanket disable on modules.
-fe0959e disable some tracers
-1e614d8 sched/debug: disable sched debug sysrq by default - increase performance
-ede9792 disable IO stats
-77f17d8 disable more debugging
-cd04c0e init BlackScreen
-da4683f Revert "camera_v2: selectively merge up-to LA.UM.5.5.r1-06700-8x96.0 changes"
-0b652fb camera_v2: selectively merge up-to LA.UM.5.5.r1-06700-8x96.0 changes
-aa11469 synaptics_dsx_force: do not reinit the device upon suspend/resume
-99e7920 Normal charging: use lower ampere
-13b7491 drivers: i2c: Fix direct references to HZ
-b94437c5 Fix conversation from HZ to msecs_to_jiffies
-12c9d92 sound: fix direct HZ referenz
-81f164d Increase maximum charge input current
-2c076e1 f2fs: avoid fsync() failure caused by EAGAIN in writepage()
-2c41a8a f2fs: clear PageError on writepage - part 2
-dc80048 f2fs: check cap_resource only for data blocks
-4c60ae7 Revert "f2fs: introduce f2fs_set_page_dirty_nobuffer"
-2bdaed6 f2fs: clear PageError on writepage
-2f39b29 f2fs: refactor read path to allow multiple postprocessing steps
-7f41f91 fscrypt: allow synchronous bio decryption
-7afd245 f2fs: remain written times to update inode during fsync
-122b35f f2fs: make assignment of t->dentry_bitmap more readable
-913d11e f2fs: truncate preallocated blocks in error case
-24b9c43 f2fs: fix a wrong condition in f2fs_skip_inode_update
-638d568 f2fs: reserve bits for fs-verity
-034d866 f2fs: Add a segment type check in inplace write
-09cb3e6 f2fs: no need to initialize zero value for GFP_F2FS_ZERO
-c504014 f2fs: don't track new nat entry in nat set
-1d8fc1b f2fs: clean up with F2FS_BLK_ALIGN
-2022877 f2fs: check blkaddr more accuratly before issue a bio
-673fdc2 f2fs: Set GF_NOFS in read_cache_page_gfp while doing f2fs_quota_read
-8a9f423 f2fs: introduce a new mount option test_dummy_encryption
-15342b8 f2fs: introduce F2FS_FEATURE_LOST_FOUND feature
-0da6b85 f2fs: release locks before return in f2fs_ioc_gc_range()
-74791db f2fs: align memory boundary for bitops
-6b457e8 f2fs: remove unneeded set_cold_node()
-11464f4 f2fs: wrap all options with f2fs_sb_info.mount_opt
-49e4228 f2fs: Don't overwrite all types of node to keep node chain
-89c01d7 f2fs: introduce mount option for fsync mode
-0d109e7 f2fs: fix to restore old mount option in ->remount_fs
-83c2090 f2fs: wrap sb_rdonly with f2fs_readonly
-ce62448 f2fs: avoid selinux denial on CAP_SYS_RESOURCE
-ec24458 f2fs: support hot file extension
-2e7d34e f2fs: fix to avoid race in between atomic write and background GC
-f1f6b11 f2fs: do gc in greedy mode for whole range if gc_urgent mode is set
-7978f4a f2fs: issue discard aggressively in the gc_urgent mode
-c931bae f2fs: set readdir_ra by default
-3064633 f2fs: add auto tuning for small devices
-4ed0539 f2fs: add mount option for segment allocation policy
-86a8f91 f2fs: don't stop GC if GC is contended
-1054c7b f2fs: expose extension_list sysfs entry
-3dfe19b f2fs: fix to set KEEP_SIZE bit in f2fs_zero_range
-d5234ce f2fs: introduce sb_lock to make encrypt pwsalt update exclusive
-a5d73d7 f2fs: remove redundant initialization of pointer 'p'
-5351856 f2fs: flush cp pack except cp pack 2 page at first
-e3a9f5d f2fs: clean up f2fs_sb_has_xxx functions
-d043496 f2fs: remove redundant check of page type when submit bio
-51a9e74 f2fs: fix to handle looped node chain during recovery
-7f08ff1 f2fs: handle quota for orphan inodes
-3249ff3 f2fs: support passing down write hints to block layer with F2FS policy
-0a59189 f2fs: support passing down write hints given by users to block layer
-70b169a f2fs: fix to clear CP_TRIMMED_FLAG
-eddb365 f2fs: support large nat bitmap
-3c2ec8b f2fs: fix to check extent cache in f2fs_drop_extent_tree
-9a1e75f f2fs: restrict inline_xattr_size configuration
-5d93d74 f2fs: fix heap mode to reset it back
-44755ea f2fs: fix potential corruption in area before F2FS_SUPER_OFFSET
-2721771 fscrypt: fix build with pre-4.6 gcc versions
-1fc459b fscrypt: remove 'ci' parameter from fscrypt_put_encryption_info()
-cd120ef fscrypt: fix up fscrypt_fname_encrypted_size() for internal use
-f80c477 fscrypt: define fscrypt_fname_alloc_buffer() to be for presented names
-e823e9b fscrypt: calculate NUL-padding length in one place only
-0177e30 fscrypt: move fscrypt_symlink_data to fscrypt_private.h
-75c0ed6 fscrypt: remove fscrypt_fname_usr_to_disk()
-04bb759e f2fs: switch to fscrypt_get_symlink()
-3728c41 f2fs: switch to fscrypt ->symlink() helper functions
-d2e2c29 fscrypt: new helper function - fscrypt_get_symlink()
-552b2ea fscrypt: new helper functions for ->symlink()
-ec5d382 fscrypt: trim down fscrypt.h includes
-c3ebe4a fscrypt: move fscrypt_is_dot_dotdot() to fs/crypto/fname.c
-0119767 fscrypt: move fscrypt_valid_enc_modes() to fscrypt_private.h
-c69e576 fscrypt: move fscrypt_operations declaration to fscrypt_supp.h
-85b4ad3 fscrypt: split fscrypt_dummy_context_enabled() into supp/notsupp versions
-5d353cf fscrypt: move fscrypt_ctx declaration to fscrypt_supp.h
-0ef6eab fscrypt: move fscrypt_info_cachep declaration to fscrypt_private.h
-df4af8d fscrypt: move fscrypt_control_page() to supp/notsupp headers
-2bb84b2 fscrypt: move fscrypt_has_encryption_key() to supp/notsupp headers
-dcfeafa qcacld-2.0: Disable CONFIG_WLAN_THERMAL_SHUTDOWN
-d8fa9cd regen zl1/x2 defconfigs
-48d086d x2/zl1: Enable quota support for faster storage stats
-4d28f91 x2: enable BFQ, make it default and regen defconfig
-c66dfc5 zl1/x2: enable F2FS and regenerate defconfigs
-d6a3730 f2fs: don't put dentry page in pagecache into highmem
-2fb786f f2fs: support inode creation time
-3176927 f2fs: rebuild sit page from sit info in mem
-6d7c5e2 f2fs: stop issuing discard if fs is readonly
-5a970d8 f2fs: clean up duplicated assignment in init_discard_policy
-2a3affb f2fs: use GFP_F2FS_ZERO for cleanup
-e267616 f2fs: allow to recover node blocks given updated checkpoint
-0609018 f2fs: recover some i_inline flags
-1dd7532 f2fs: correct removexattr behavior for null valued extended attribute
-4c62687 f2fs: drop page cache after fs shutdown
-d9cd5eb f2fs: stop gc/discard thread after fs shutdown
-69756e5 f2fs: hanlde error case in f2fs_ioc_shutdown
-bd3bf1c f2fs: split need_inplace_update
-717f127 f2fs: fix to update last_disk_size correctly
-3e244db f2fs: kill F2FS_INLINE_XATTR_ADDRS for cleanup
-f9cdba4 f2fs: clean up error path of fill_super
-922a421 f2fs: avoid hungtask when GC encrypted block if io_bits is set
-512cef2 f2fs: allow quota to use reserved blocks
-0616ae4 f2fs: fix to drop all inmem pages correctly
-2fabbc3b f2fs: speed up defragment on sparse file
-b51ab15 f2fs: support F2FS_IOC_PRECACHE_EXTENTS
-f314929 f2fs: add an ioctl to disable GC for specific file
-44a2b38 f2fs: prevent newly created inode from being dirtied incorrectly
-12adf9a f2fs: support FIEMAP_FLAG_XATTR
-f13ca69 f2fs: fix to cover f2fs_inline_data_fiemap with inode_lock
-9967f4c2 f2fs: check node page again in write end io
-59b96d0 f2fs: fix to caclulate required free section correctly
-946e9c9 f2fs: handle newly created page when revoking inmem pages
-78d1c89 f2fs: add resgid and resuid to reserve root blocks
-55e7850 f2fs: implement cgroup writeback support
-d48b9b7 f2fs: remove unused pend_list_tag
-0175559 f2fs: avoid high cpu usage in discard thread
-e0dc2b1 f2fs: make local functions static
-fbc1458 f2fs: add reserved blocks for root user
-e0a8b43 f2fs: check segment type in __f2fs_replace_block
-3d1ae01 f2fs: update inode info to inode page for new file
-ab2d594 f2fs: show precise # of blocks that user/root can use
-aca6f3f f2fs: clean up unneeded declaration
-a4cb7cb f2fs: continue to do direct IO if we only preallocate partial blocks
-4293f91 f2fs: enable quota at remount from r to w
-51ece86 f2fs: skip stop_checkpoint for user data writes
-d8845db f2fs: fix missing error number for xattr operation
-25cbd17 f2fs: recover directory operations by fsync
-b82a81c f2fs: return error during fill_super
-0b1a145 f2fs: fix an error case of missing update inode page
-cba460d f2fs: fix potential hangtask in f2fs_trace_pid
-87651f6 f2fs: no need return value in restore summary process
-157575e f2fs: use unlikely for release case
-03cf3c8 f2fs: don't return value in truncate_data_blocks_range
-09b1fb1 f2fs: clean up f2fs_map_blocks
-05661d3 f2fs: clean up hash codes
-ad8a834 f2fs: fix error handling in fill_super
-a8b0af5 f2fs: spread f2fs_k{m,z}alloc
-72d9cac f2fs: inject fault to kvmalloc
-9ba6cf5 f2fs: inject fault to kzalloc
-121e8fe f2fs: remove a redundant conditional expression
-6e7e8dc f2fs: apply write hints to select the type of segment for direct write
-06e9f2a f2fs: switch to fscrypt_prepare_setattr()
-1a73193 f2fs: switch to fscrypt_prepare_lookup()
-4a1949f f2fs: switch to fscrypt_prepare_rename()
-2f26274 f2fs: switch to fscrypt_prepare_link()
-cd23baa f2fs: switch to fscrypt_file_open()
-141320b f2fs: remove repeated f2fs_bug_on
-c6fc142 f2fs: remove an excess variable
-4c326c5 f2fs: fix lock dependency in between dio_rwsem & i_mmap_sem
-494583b f2fs: remove unused parameter
-001f7c4 f2fs: still write data if preallocate only partial blocks
-6d1d440 f2fs: introduce sysfs readdir_ra to readahead inode block in readdir
-ac9955c f2fs: fix concurrent problem for updating free bitmap
-72a6fd6 f2fs: remove unneeded memory footprint accounting
-321d499 f2fs: no need to read nat block if nat_block_bitmap is set
-1556566 f2fs: reserve nid resource for quota sysfile
-a677bb4 fscrypt: resolve some cherry-pick bugs
-07a290e fscrypt: move to generic async completion
-8047eb0 crypto: introduce crypto wait for async op
-c9646c0 fscrypt: lock mutex before checking for bounce page pool
-821350f fscrypt: new helper function - fscrypt_prepare_setattr()
-f6c9ed5 fscrypt: new helper function - fscrypt_prepare_lookup()
-ed11e07 fscrypt: new helper function - fscrypt_prepare_rename()
-3bad62f fscrypt: new helper function - fscrypt_prepare_link()
-0490982 fscrypt: new helper function - fscrypt_file_open()
-e8b0e19 fscrypt: new helper function - fscrypt_require_key()
-ba0cd61 fscrypt: remove unneeded empty fscrypt_operations structs
-0d54c60 fscrypt: remove ->is_encrypted()
-f605e4a fscrypt: switch from ->is_encrypted() to IS_ENCRYPTED()
-5028d82 fs, fscrypt: add an S_ENCRYPTED inode flag
-98180e0 fscrypt: clean up include file mess
-5c2f78f fscrypt: fix dereference of NULL user_key_payload
-f908497 fscrypt: make ->dummy_context() return bool
-8a223fb video: mdss: Fix dual-DSI issue in LiveDisplay
-0370d25 Revert "msm: mdss: Disable ECG feature for all chipsets"
-d56ec8c Revert "x2: dts: Remove pingpong-split from Truly-pvt.dtsi"
-bc6c2d4 Revert "x2: dts: remove pingpong-split from Boe and ofilm pvt panels"
-d5d398c leeco: add qcom,battery-data to pmi8994_charger
-dccfd4c zl1: enable BFQ and regenerate defconfig
-6ed6463 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.18.0
-5805c87 block: introduce the BFQ-v7r8 I/O sched for 3.18.0
-7dcdf29 block: cgroups, kconfig, build bits for BFQ-v7r8-3.18.0
-bbedfd2 smbcharger: leeco code cleanup
-7d08b11 Revert "smbcharger: import leeco changes for zl1"
-f197089 Convert few critical drivers to use msecs_to_jiffies insted of HZ
-5753c06 leeco imported drivers: do not reference HZ directly
-e8fa801 x2: dts: remove pingpong-split from Boe and ofilm pvt panels
-34313e1 smbcharger: import leeco changes for zl1
-8d4ada7 Remove DEBUG configs
-80fffb3 input: synaptics_dsx: valid bounds of intr_reg_num
-194b4a8 zl1 / x2: regenerate defconfigs
-dc74f82 input: synaptics_dsx: remove unused synaptics touch screen driver files
-43f8050 silence goodix fingerprint spam
-50f0869 x2: dts: Remove pingpong-split from Truly-pvt.dtsi
-d760878 leeco: fork msm8996-mtp.dtsi
-2df8c50 zl1/x2: properly define wsa properties
-9fc448c zl1/x2: build maxq616 driver
-0f842c2 Add maxq616 IR driver
-5236cc4 arm64: make Timer Interrupt Frequency selectable
-b716830 leeco_msm8996: set HZ to 300 to increase performance
-ba22fef Revert "power: qpnp-smbcharger: init power supply type as USB"
-eb1c2fc power/usb: fix cdla and otg for x2
-5e5b014 Update touchscreen fw from WAXCNFN5902303282S prebuilt kernel
-c6ed9ac power: qpnp-smbcharger: init power supply type as USB
-33f433c input: synaptics_dsx: Save fw size to fwu->image_size
-edb6054 input: synaptics_dsx: add bounds checks for firmware id
-720d1fa input: synaptics_dsx: add update bounds checks.
-17af7ea leds: Import led PWM configs from Nougat
-92f9f23 pwm: qpnp-pwm: add api for synchronous enable of pwms
-4527c3b soc: qcom: secure_buffer: Fix memory leak
-8b55493 ANDROID: uid_sys_stats: fix the comment
-ddda95b ANDROID: sdcardfs: Fix missing break on default_normal
-618e2d7 ANDROID: sdcardfs: Add default_normal option
-edf6142 ANDROID: sdcardfs: notify lower file of opens
-8e26deb power: qpnp-fg: Use default DELTA_SOC without rounding the value
-7037c8a kernel: power: Add a bool for DEDUCE_WAKEUP_REASONS
-cd7c03c mdss: livedisplay: Fix memory leaks in mdss_livedisplay_update()
-7843992 video: mdss: LiveDisplay driver
-aca0f9a Revert "mdss: import livedisplay driver from cm-14.1"
-fb70145 Fix compile error
-37f92d4 wcd-mbhc-v2: merge x2 and zl1 code from cm-14.1
-10ada07 firmware_class: make firmware caching configurable
-b8f43e4 batterydata: use default batterydata if not data was found
-f368551 mdss: import livedisplay driver from cm-14.1
-643f15b x2: update DTS for fix audio
-eac386b zl1: build focaltech touch
-47be4ba zl1: fix includes
-654ae24 leeco: overlay regulator-max-microvolt for camera regs
-3e1cda8 camera_v2: bulk import leeco camera driver
-c790fc0 pstore: Init ecc info from device tree or ramoops_ecc
-5db0236 pstore: Fix the ramoops module parameters update
-7b3e409 fs/pstore: add ramoops-ftrace-size support
-28a3ecb fs/pstore: initialize pmsg from device tree
-448eb62 fs:pstore:ramoops: config mem from dt
-13ac7ca regen zl1/x2 defconfigs
-d0dc378 x2: update defconfig
-c0ba78f import zl1/x2 sources modified from WEXNAOP5801911011S
-ee1e9e3 staging: import qcacld-2.0 from LA.UM.6.5.r1-09300-8x96.0
-8de343a FROMLIST: android: binder: Add page usage in binder stats
-de6fd06 FROMLIST: android: binder: Add shrinker tracepoints
-7bae409 FROMLIST: android: binder: Add global lru shrinker to binder
-303b1da FROMLIST: android: binder: Move buffer out of area shared with user space
-42e3b14 FROMLIST: android: binder: Add allocator selftest
-0afd3b0 FROMLIST: android: binder: Refactor prev and next buffer into a helper function
-9a3a917 binder: make FIFO inheritance a per-context option
-05e332e msm: mdss: Retrict use of DMA Multi-Rect for FB pan_display
-7eb2cba msm: mdss: Add multi-rectangle validation support
-78ddc5d UPSTREAM: Revert "USB: core: only clean up what we allocated"
-319627c Merge tag 'LA.UM.6.5.r1-09300-8x96.0' into kernel.lnx.3.18.r33-rel
-
-   * kernel/oneplus/msm8996/
-ccbcdbb enable Generic on-chip SRAM driver
-12c12ac proc: Set androidboot.verifiedbootstate=green
-d733f8ce CRC off by default
-56ca16e clockevents: Provide explicit broadcast oneshot control functions
-27c9ba5 clockevents: Provide explicit broadcast control functions
-07061ac drivers: cpuidle: lpm-levels: Enable Sleep prediction
-dda7e4e cpuidle: lpm-levels: Consider cluster history for LPM selection
-0c9a6f8 cpuidle: lpm-levels: Consider history during LPM selection
-c2cbdae lpm-levels: Compute minimum residencies for LPM levels
-8058c12 cpufreq: cpu boost fix govs compile
-862f7a5 drivers: cpu-boost: optimize policy update loop on input cpufreq boost
-4aa11bd cpufreq: cpu-boost: don't boost over user set max freq and break out earlier
-24cccf9 IKSWM-1408: cpufreq: Avoid hardcoding device tree paths for CPU
-be6b0c2 cpufreq: add cpufreq_notify_utilization
-ba3e207 cpufreq: use memcpy() to copy policy
-b59845c UPSTREAM: PM / sleep: Re-implement suspend-to-idle handling
-0bba1e8 PCI / PM: Avoid resuming more devices during system suspend
-cf34a2c PCI / PM: Avoid resuming PCI devices during system suspend
-5784e9c PM: devfreq: Always reflect a change of polling interval
-e127773 qcom: msm-core: queue work on system_power_efficient_wq
-9a7c198 drivers: power: bcl: queue work on system_power_efficient_wq
-f844353 power: bcl: queue work on system_power_efficient_wq
-a128630 workqueue: Remove config guard for power_efficient
-9175f25 workqueue: fix permissions
-2de31ad msm_performance: Make input boosting optional
-dbba166 Linux 3.18.117
-430c3fd turn off -Wattribute-alias
-3a71ae0 ARM: fix put_user() for gcc-8
-57a617a can: xilinx_can: fix RX overflow interrupt not being enabled
-0e36814 can: xilinx_can: keep only 1-2 frames in TX FIFO to fix TX accounting
-159b65a can: xilinx_can: fix device dropping off bus on RX overrun
-e7337c5 can: xilinx_can: fix RX loop if RXNEMP is asserted without RXOK
-ce03b31 usb: gadget: f_fs: Only return delayed status when len is 0
-72254c8 usb: core: handle hub C_PORT_OVER_CURRENT condition
-fd620d9 usb: cdc_acm: Add quirk for Castles VEGA3000
-d932145 tcp: detect malicious patterns in tcp_collapse_ofo_queue()
-25c28af tcp: avoid collapses in tcp_prune_queue() if possible
-1e758a7 tcp: do not delay ACK in DCTCP upon CE status change
-8c11f48 tcp: do not cancel delay-AcK on DCTCP special ACK
-e76a28c tcp: helpers to send special DCTCP ack
-7d776e1 tcp: fix dctcp delayed ACK schedule
-411d7e3 rtnetlink: add rtnl_link_state check in rtnl_configure_link
-f3f461a net/mlx4_core: Save the qpn from the input modifier in RST2INIT wrapper
-88021f2 ip: hash fragments consistently
-15245b3 skbuff: Unconditionally copy pfmemalloc in __skb_clone()
-8428d1e net: Don't copy pfmemalloc flag in __copy_skb_header()
-f970e49 ptp: fix missing break in switch
-58635c8 ipv4: Return EINVAL when ping_group_range sysctl doesn't map to user ns
-dd38514 ARC: mm: allow mprotect to make stack mappings executable
-ade78e5 ARC: Fix CONFIG_SWAP
-bfa30d8 ALSA: rawmidi: Change resized buffers atomically
-b7bd86d fat: fix memory allocation failure handling of match_strdup()
-49347a3 x86/MCE: Remove min interval polling limitation
-657e186 msm: vidc: disable CPU L2 cache PC during video sessions
-516b1cb Wakelock reduction pt2
-22ee64c wcd9335: disable debug mode
-da48374 msm_thermal: Silence log spamming on changing freq
-47e7103 decrease time for fp detection
-6c98184 increased fp speed
-602f2bd MSM-Thermal: tweak to improve throttling
-
-   * system/tools/hidl/
-2626915 Add DT_UNKNOWN handling
-4b19c46 Revert "Use stat() to determine file type from readdir()"
-
-====================
-     07-27-2018
-====================
-
+   * frameworks/native/
+332163f Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
 
    * frameworks/opt/telephony/
-acfb90b Proper supplementary service notification handling (2/5).
+1e612ae Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
 
-   * kernel/oneplus/msm8996/
-43fe491 lowmemorykiller: account for unevictable pages
-c693da1 android/lmk: reset to common-3.18 version
-79d1702 msm: mpm: disable debugging
-ad25cc3 msm: vidc: disable debug logs
-cc5b4e7 qcom-cpufreq: take diferent startup freqs from OP3 into account
-7fc875c qcom-cpufreq: ensure startup is according to default frequencies (no overclocking/underclocking)
-a9d5001 power: make sync on suspend optional
-54399e4 power:qpnp-charger: extended charge time from 30s to 100s when battery status is near to full
-b66ba64 drivers: misc: implement usb fast charge mode
-6f297dd random: Add callback API for random pool readiness
-6b6816f random: Blocking API for accessing nonblocking_pool
-6fa044c random: Wake up all getrandom(2) callers when pool is ready
-711ca4a writeback: fix writeback cache thrashing
-1d6d0e3 msm: thermal: Add sysfs nodes to control parameters
-acdc7bf PM / devfreq: Add a governor white list
-2c97abb PM: devfreq: Fix simple_ondemand crashing on startup
-c492f2b msm: kgsl: Report correct GPU frequency in sysfs
-72001d0 PM: devfreq: Use high priority workqueue
-66ff5f3 added zen iosched
-95c0047 zen-iosched: change fifo_batch to 16
-0f569c8 block: add zen scheduler
-897c334 mm: slub: Default slub_max_order to 0
-e9f4eda mmc: move to a SCHED_FIFO thread
-4c26404 binfmt_elf.c: use get_random_int() to fix entropy depleting
-c5ed09e qdsp6v2: extend compilation with Os
-ee0a00c sound: soc: optimize for size
-888eaaa sound: msm: qdsp6v2: optimize for size
-81f8c1f asm-generic: atomic.h: relaxed atomic_read
-647cdf4 input: synaptics: fix off-screen gestures
-f380e2f CHROMIUM: android: binder: Fix potential scheduling-while-atomic
-658cfbf cpu-boost: Boost priority of notifier_block
-13f9537 give fp more priority
-1ef11a3 disable CONFIG_WLAN_FEATURE_RX_WAKELOCK
-eac6254 drivers: mdss: queue input handler functions to a high prio wq
-3d4a41f drivers: mdss: queue work on system_power_efficient_wq
-2666148 reduced wakelocks by wlan
-ca600f8 Reduce qcom_rx_wakelock timeouts to 7 seconds
-370b1ab ipc/mqueue: Implement lockless pipelined wakeups
-8022053 workqueue: change permissions to allow root control of wq_power_efficient toggle
-7ee3ab8 Disable Adreno Driver Logging
-6d25239 Add performance improvement.
-b3f0853 add some power efficient queues
-cc07638 cnss: Silence runtime resume status
-6ba485f msm: do not log spam wake up interrupt
-f37de2e cpu-boost: Boost priority of notifier_block
-743968a dts: Reduce msm-core polling rate to 100ms
-134beb4 optimize sfck compression
-dda0297 block: disable add_random
-408727f sched/fair: Reduce latency for better responsiveness
-0f59a7a decrease swappiness to 30 to prefer higher ram usage
-42e6f83 Hardware Wakelock Suppressor v3
-3624d3f cpufreq: Schedule work for the first-online CPU on resume
-1da4d2b workqueue: Add system wide power_efficient workqueues
-889ed5b block: queue work on power efficient wq
-a1d7966 ASoC: wcdxxxx: queue work on power efficient wq
-e1649af sched/debug: disable sched debug sysrq by default - increase performance
-c15cae3 gt9xx: fix slow touchscreen wakeup We don't need this complicated system. It works fine even when simplified. This speeds up screen and touchscreen wakeup when woken up by fingerprint scaner, power button and etc... Signed-off-by: YaroST12 <yaro330@gmail.com>
+   * hardware/lineage/lineagehw/
+82d586c lineagehw: Add support for sysfs ReadingEnhancement
+7f833b8 lineagehw: Update ReadingEnhancement for new API
 
-   * packages/services/Telecomm/
-9a00d00 Proper supplementary service notification handling (3/5)
+   * packages/apps/Messaging/
+3686c41 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+af0e887 Revert "Messaging: Request external storage permission before handling shared files"
+
+   * packages/apps/PackageInstaller/
+e57050a Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * packages/apps/Settings/
+feabf10 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * packages/apps/UnifiedEmail/
+d2fc4bd Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * packages/providers/DownloadProvider/
+5ee3e34 Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
 
    * packages/services/Telephony/
-553d550 Proper supplementary service notification handling (4/5).
+ce5915c Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
 
-   * system/sepolicy/
-ab0ce05 sepolicy: public: Exclude Recovery from system mount neverallow
-94884c6 sepolicy: Allow init to modify system_blk_device
+   * system/bt/
+37b2ade Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+   * system/vold/
+2aa8eba Merge tag 'android-8.1.0_r43' into staging/lineage-15.1_merge-android-8.1.0_r43
+
+====================
+     08-08-2018
+====================
+
+
+   * frameworks/base/
+20f48b1 Fix disable hw keys
+d2b5b67 camera: Check if aux camera whitelist is set before restricting cameras
+6df31d0 fwb: Add check for odm version
+e1dce65 Permissions: Grant Pixel's Wallpaper app access to SD
+e5636dd Revert "Camera: Extend face detection"
+3b2d8d8 SystemUI: show AmbientDisplay settings on long press AD & AOD tiles
+43bb7dd QS: SystemUI: Add On-The-Go Tile
+84e9da0 base: Implement animations for back edge gestures [1/2]
+e4c8a94 Support more Network modes for LTE-tile.
+8dd6f5a LteTile: multisim compatibility
+b50773e SystemUI: Add LTE Tile
+1fca0ff base: unlink notification volume is back [1/2]
+
+   * frameworks/opt/telephony/
+78f8bd8 IMS: Sudden deregisteration takes place soon after registeration.
+
+   * lineage-sdk/
+82eb028 lineage-sdk: Add an overlay to specify notch presence
+
+   * system/core/
+1a56a06 Allow firmware loading from ODM partition
+b9bfeb9 add odm partition to ld.config.legacy
+
+   * vendor/havoc/
+6522b07 Add new clock styles
+34bed1e lineage: Allow background broadcast for CAMERA_BUTTON
+b4ee3b7 Revert "ota: Validate any installed data's signature against our own"
+3122684 vendor: Copy org.lineageos.settings permission
+44bc6ff ATV: Build LineageCustomizer
+8cfe43e prebuilt: apn: Sprint 2: Drop http definition from MMSC proxy
+
+====================
+     08-07-2018
+====================
+
+
+   * frameworks/base/
+eac1488 Automatic translation import
+
+   * frameworks/native/
+9266834 SF: Backport "Fix landscape LCM issue" for legacy hwc
+1827cd5 SF: Backport "Need GSI to support landscape LCM" for legacy hwc
+a15be7b DO NOT MERGE: Fix landscape LCM issue
+b3eca05 DO NOT MERGE: Need GSI to support landscape LCM
+cb28a6c Revert "SF: Squashed hwrotation support"
+62f62c3 Revert "SF: Fix hwrotation screenshots at surfaceflinger layer"
+
+   * hardware/qcom/power/
+34c7410 power: Fix several typos in power profiles
+
+   * kernel/oneplus/msm8996/
+6b06726 bump version
+e67153a tcp: allow for bigger reordering level
+72a243f add CDG tcp algorithm
+6eb7b3a tcp: add CDG congestion control
+b0de65f WLAN subsystem: Sysctl support for key TCP/IP parameters
+
+   * packages/apps/AudioFX/
+23220c8 Automatic translation import
+
+   * packages/apps/Calendar/
+63be36f Automatic translation import
+
+   * packages/apps/LineageParts/
+eb01385 parts: On-The-Go Mode (3/3)
+
+   * packages/apps/Settings/
+5e2b8e0 Automatic translation import
+
+   * packages/services/Telephony/
+19433ff implement LTE toggle for TD-SCDMA supporting devices also
+84fb0b1 ToggleLte: multisim compatibility
+45ad1fe Restore previous network value after  toggleLTE
+7548f31 Implement toggleLte
 
