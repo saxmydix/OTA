@@ -230,10 +230,6 @@
                 id="rom"
                 title=""
                 description="">https://sourceforge.net/projects/havoc-os/files/rolex/Havoc-OS-20180812-rolex-Official.zip/download</RomUrl>
-            <XdaUrl
-                id="xda
-                title="Forum"
-                description="Visit the Official HavocOS XDA-Thread for Redmi 4A And Redmi 5A">https://forum.xda-developers.com/redmi-4a/development/rom-havoc-os-t3810294</XdaUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
