@@ -186,11 +186,11 @@
         </A6020>
 
         <land>
-            <Filename>Havoc-OS-20180802-land-Official</Filename>
+            <Filename>Havoc-OS-20180813-land-Official</Filename>
             <RomUrl
                 id="rom"
                 title="" 
-                description="">https://sourceforge.net/projects/havoc-os/files/land/Havoc-OS-20180802-land-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/land/Havoc-OS-20180813-land-Official.zip/download</RomUrl>
             <GAppsUrl 
                 id="gapps"
                 title=""
