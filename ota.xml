@@ -613,11 +613,11 @@
         </ether>
 	    	    
 	<bullhead>
-            <Filename>Havoc-OS-20180808-bullhead-Official</Filename>
+            <Filename>Havoc-OS-20180813-bullhead-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/bullhead/Havoc-OS-20180808-bullhead-Official/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/bullhead/Havoc-OS-20180813-bullhead-Official/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
