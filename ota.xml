@@ -691,7 +691,23 @@
                 title=""
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
          </hltetmo>
-	    
+
+        <hi3660>
+            <Filename>Havoc-OS-20180809-hi3660-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/hi3660/Havoc-OS-20180809-hi3660-Official.zip/download</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+         </hi3660>
+
 	</Stable>
 </SlimOTA>
 
