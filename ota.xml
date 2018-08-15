@@ -46,11 +46,11 @@
         </mido>
         
         <whyred>
-            <Filename>Havoc-OS-20180723-whyred-Official</Filename>
+            <Filename>Havoc-OS-20180815-whyred-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/whyred/Havoc-OS-20180723-whyred-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/whyred/Havoc-OS-20180815-whyred-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
