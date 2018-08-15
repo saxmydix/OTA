@@ -653,11 +653,11 @@
         </bullhead>
 	   
         <hlte>
-            <Filename>Havoc-OS-20180812-hlte-Official</Filename>
+            <Filename>Havoc-OS-20180815-hlte-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/hlte/Havoc-OS-20180812-hlte-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/hlte/Havoc-OS-20180815-hlte-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
@@ -673,11 +673,11 @@
          </hlte>
 	   
 	 <hltechn>
-            <Filename>Havoc-OS-20180812-hltechn-Official</Filename>
+            <Filename>Havoc-OS-20180815-hltechn-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/hltechn/Havoc-OS-20180812-hltechn-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/hltechn/Havoc-OS-20180815-hltechn-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
@@ -693,11 +693,11 @@
         </hltechn>
 	   
         <hltetmo>
-            <Filename>Havoc-OS-20180813-hltetmo-Official</Filename>
+            <Filename>Havoc-OS-20180815-hltetmo-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/hltetmo/Havoc-OS-20180813-hlte-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/hltetmo/Havoc-OS-20180815-hlte-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
