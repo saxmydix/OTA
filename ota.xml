@@ -86,7 +86,7 @@
         </whyred>
 
         <sagit>
-            <Filename>Havoc-OS-20180802-sagit-Official.zip</Filename>
+            <Filename>Havoc-OS-20180815-sagit-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Download"
@@ -94,7 +94,7 @@
             <SagitFirmwareUrl
                 id="SagitFirmware"
                 title="Firmware"
-                description="Download recommended Firmware">https://goo.gl/T9nC6Z</SagitFirmwareUrl>
+                description="Download recommended Firmware">https://androidfilehost.com/?fid=746010030569970035</SagitFirmwareUrl>
             <XdaUrl
                 id="xda"
                 title="Forum"
