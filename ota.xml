@@ -109,6 +109,26 @@
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </sagit>
         
+	<chiron>
+            <Filename>Havoc-OS-20180818-chiron-Official.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Download"
+                description="Download latest Official builds">https://sourceforge.net/projects/havoc-os/files/chiron</RomUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Mi Mix 2">https://forum.xda-developers.com/mi-mix-2/development/rom-havoc-os-t3831119</XdaUrl>
+            <TelegramUrl
+                id="telegram"
+                title="Telegram"
+                description="Chat about HavocOS on Telegram">https://t.me/havocxiaomi</TelegramUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </chiron>
+	    
         <vince>
             <Filename>Havoc-OS-20180710-vince-Official</Filename>
             <RomUrl
