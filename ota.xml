@@ -888,6 +888,30 @@
                 description="">https://www.paypal.me/vhermann</PaypalUrl>
         </kltechnduo>
 
+        <x00td>
+            <Filename>Havoc-OS-20180820-X00TD-Official</Filename>
+            <RomUrl
+                id="rom"
+                title=""
+                description="">https://sourceforge.net/projects/havoc-os/files/x00td/Havoc-OS-20180820-X00TD-Official.zip/download</RomUrl>
+            <GAppsUrl
+                id="gapps"
+                title=""
+                description="">http://opengapps.org</GAppsUrl>
+            <XdaUrl
+                id="xda"
+                title="Forum"
+                description="Visit the Official HavocOS XDA-Thread for Asus Zenfone Max Pro M1">https://forum.xda-developers.com/asus-zenfone-max-pro-m1/development/rom-havoc-os-t3831642</XdaUrl>
+            <ChangelogUrl
+                id="changelog"
+                title=""
+                description="">https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/changelog/changelog.txt</ChangelogUrl>
+            <PaypalUrl
+                id="donation"
+                title=""
+                description="">https://www.paypal.me/vhermann</PaypalUrl>
+        </x00td>
+
 	</Stable>
 </SlimOTA>
 
