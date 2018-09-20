@@ -589,11 +589,11 @@
         </potter>
 	    
         <on7xelte>
-            <Filename>Havoc-OS-20180828-on7xelte-Official</Filename>
+            <Filename>Havoc-OS-20180919-on7xelte-Official</Filename>
             <RomUrl
                 id="rom"
                 title=""
-                description="">https://sourceforge.net/projects/havoc-os/files/on7xelte/Havoc-OS-20180828-on7xelte-Official.zip/download</RomUrl>
+                description="">https://sourceforge.net/projects/havoc-os/files/on7xelte/Havoc-OS-20180919-on7xelte-Official.zip/download</RomUrl>
             <GAppsUrl
                 id="gapps"
                 title=""
